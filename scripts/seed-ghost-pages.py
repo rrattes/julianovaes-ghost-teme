@@ -101,6 +101,120 @@ PAGES = [
 """,
     },
     {
+        "title": "Psicoterapia individual",
+        "slug": "psicoterapia-individual",
+        "excerpt": "Um espaco de escuta para compreender sua historia, emocoes, escolhas e modos de relacao.",
+        "image": "/content/images/2026/05/post-psicoterapia.png",
+        "html": """
+<section class="page-panel page-panel-intro">
+  <p>A psicoterapia individual e um espaco de escuta para que voce possa olhar com cuidado para sua historia, seus sentimentos, seus vinculos e os modos como tem vivido suas escolhas.</p>
+  <p>O processo nao parte de respostas prontas. Ele se constroi no encontro, respeitando o tempo, a singularidade e as questoes que aparecem para cada pessoa.</p>
+</section>
+<section class="page-split">
+  <div>
+    <p class="kicker">Cuidado individual</p>
+    <h2>Um tempo para se escutar com mais clareza</h2>
+  </div>
+  <div>
+    <p>Buscar terapia pode fazer sentido em momentos de sofrimento, ansiedade, luto, mudancas, conflitos relacionais ou quando algo parece se repetir e pede compreensao.</p>
+    <p>A partir de uma escuta fenomenologico-existencial, o trabalho acompanha a experiencia vivida e ajuda a abrir novas possibilidades de compreensao e escolha.</p>
+  </div>
+</section>
+<section class="page-list">
+  <h2>Quando pode ajudar</h2>
+  <ul>
+    <li>Momentos de angustia, ansiedade ou tristeza persistente.</li>
+    <li>Dificuldades em escolhas, limites e relacoes.</li>
+    <li>Processos de mudanca, perda ou transicao de vida.</li>
+    <li>Desejo de compreender melhor a propria historia.</li>
+  </ul>
+</section>
+<section class="page-cta">
+  <div>
+    <p class="kicker">Agendamento</p>
+    <h2>Vamos conversar sobre o que voce esta vivendo?</h2>
+  </div>
+  <a class="button" href="https://wa.me/5521999988956?text=Ola%2C%20Julia.%20Gostaria%20de%20saber%20mais%20sobre%20psicoterapia%20individual.">Chamar no WhatsApp</a>
+</section>
+""",
+    },
+    {
+        "title": "Psicoterapia de casal",
+        "slug": "psicoterapia-de-casal",
+        "excerpt": "Um espaco de cuidado para o casal refletir sobre comunicacao, vinculos, conflitos e possibilidades.",
+        "image": "/content/images/2026/05/post-casamentos.png",
+        "html": """
+<section class="page-panel page-panel-intro">
+  <p>A psicoterapia de casal oferece um espaco de escuta para que duas pessoas possam compreender como se relacionam, como se comunicam e que sentidos sustentam seus conflitos e escolhas.</p>
+  <p>O objetivo nao e apontar culpados, mas favorecer um dialogo mais cuidadoso, consciente e responsavel sobre a relacao.</p>
+</section>
+<section class="page-split">
+  <div>
+    <p class="kicker">Relacao e vinculo</p>
+    <h2>Escutar o casal sem perder a singularidade de cada pessoa</h2>
+  </div>
+  <div>
+    <p>O processo pode ajudar casais que atravessam crises, dificuldades de comunicacao, distanciamento, decisoes importantes ou repeticoes que fragilizam o vinculo.</p>
+    <p>A terapia cria condicoes para que o casal possa falar e ouvir de outro modo, reconhecendo impasses e possibilidades.</p>
+  </div>
+</section>
+<section class="page-list">
+  <h2>Temas frequentes</h2>
+  <ul>
+    <li>Comunicacao dificil e conflitos recorrentes.</li>
+    <li>Crises, separacao, reaproximacao ou transicoes.</li>
+    <li>Expectativas, frustracoes e combinados da vida a dois.</li>
+    <li>Construcao de escolhas mais conscientes sobre a relacao.</li>
+  </ul>
+</section>
+<section class="page-cta">
+  <div>
+    <p class="kicker">Agendamento</p>
+    <h2>Quer conversar sobre a terapia de casal?</h2>
+  </div>
+  <a class="button" href="https://wa.me/5521999988956?text=Ola%2C%20Julia.%20Gostaria%20de%20saber%20mais%20sobre%20psicoterapia%20de%20casal.">Chamar no WhatsApp</a>
+</section>
+""",
+    },
+    {
+        "title": "Psicoterapia de grupo",
+        "slug": "psicoterapia-de-grupo",
+        "excerpt": "Um espaco terapeutico em grupo para elaborar experiencias, ampliar percepcoes e construir pertencimento.",
+        "image": "/content/images/2026/05/post-akna.png",
+        "html": """
+<section class="page-panel page-panel-intro">
+  <p>A psicoterapia de grupo possibilita que cada participante encontre um espaco de fala e escuta junto a outras historias, reconhecendo diferencas, aproximacoes e novas formas de compreender o que vive.</p>
+  <p>O grupo pode ampliar percepcoes e favorecer elaboracoes que nascem do encontro com outras pessoas em um ambiente seguro e conduzido clinicamente.</p>
+</section>
+<section class="page-split">
+  <div>
+    <p class="kicker">Encontro em grupo</p>
+    <h2>Outras historias tambem ajudam a compreender a propria</h2>
+  </div>
+  <div>
+    <p>Em grupo, a experiencia individual ganha novos contornos. Ao falar, ouvir e ser afetado pelo encontro, cada pessoa pode perceber modos de relacao que talvez nao aparecessem sozinha.</p>
+    <p>O trabalho preserva o cuidado etico e o respeito ao tempo de cada participante.</p>
+  </div>
+</section>
+<section class="page-list">
+  <h2>O que o grupo pode oferecer</h2>
+  <ul>
+    <li>Escuta compartilhada em um ambiente seguro.</li>
+    <li>Ampliacao de percepcoes sobre si e os outros.</li>
+    <li>Elaboracao de experiencias e questoes comuns.</li>
+    <li>Construcao de pertencimento e novos sentidos.</li>
+  </ul>
+</section>
+<section class="page-cta">
+  <div>
+    <p class="kicker">Agendamento</p>
+    <h2>Vamos conversar sobre grupos disponiveis?</h2>
+  </div>
+  <a class="button" href="https://wa.me/5521999988956?text=Ola%2C%20Julia.%20Gostaria%20de%20saber%20mais%20sobre%20psicoterapia%20de%20grupo.">Chamar no WhatsApp</a>
+</section>
+""",
+    },
+    {
         "title": "Contato",
         "slug": "contato",
         "excerpt": "Entre em contato para conversar sobre disponibilidade, formato de atendimento e proximos passos.",

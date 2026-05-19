@@ -644,6 +644,10 @@ h3 {
   text-decoration: none;
 }
 
+.content-body .button {
+  text-decoration: none;
+}
+
 .content-body .kg-width-wide {
   width: min(1040px, calc(100vw - 32px));
   margin-left: 50%;
