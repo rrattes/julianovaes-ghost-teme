@@ -4,6 +4,27 @@ Este diretorio contem um instalador para publicar o site Ghost da Julia Novaes e
 
 O script cria um server block separado para este dominio e nao remove configuracoes existentes do Nginx.
 
+## Opcao recomendada para este projeto: SQLite
+
+Como o site e simples e o ambiente local ja usa SQLite, a forma mais direta e:
+
+```bash
+sudo DOMAIN=www.julianovaes.com.br \
+  ALT_DOMAIN=julianovaes.com.br \
+  CERTBOT_EMAIL='seu-email@dominio.com' \
+  bash deploy/install-ubuntu-22-ghost-sqlite.sh
+```
+
+Essa opcao:
+
+- instala Ghost em SQLite;
+- cria o banco local em `/var/www/julianovaes/content/data/ghost-local.db`;
+- cria paginas e posts usando os scripts do repositorio;
+- copia tema, imagens e redirects;
+- cria Nginx server block;
+- cria servico systemd;
+- configura SSL se `CERTBOT_EMAIL` estiver definido.
+
 ## Uso basico
 
 No servidor:

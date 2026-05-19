@@ -9,9 +9,9 @@ import textwrap
 import uuid
 
 
-ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
-DB_PATH = os.path.join(ROOT, "ghost-local", "content", "data", "ghost-local.db")
-IMAGES_TARGET = os.path.join(ROOT, "ghost-local", "content", "images", "2026", "05")
+ROOT = os.environ.get("PROJECT_ROOT") or os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
+DB_PATH = os.environ.get("GHOST_DB_PATH") or os.path.join(ROOT, "ghost-local", "content", "data", "ghost-local.db")
+IMAGES_TARGET = os.environ.get("GHOST_IMAGES_TARGET") or os.path.join(ROOT, "ghost-local", "content", "images", "2026", "05")
 IMAGE_SOURCES = {
     "post-relacao-fim.png": os.path.join(ROOT, "ghost-theme", "julia-novaes", "assets", "images", "posts", "post-relacao-fim.png"),
     "post-casamentos.png": os.path.join(ROOT, "ghost-theme", "julia-novaes", "assets", "images", "posts", "post-casamentos.png"),

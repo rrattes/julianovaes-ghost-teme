@@ -7,8 +7,8 @@ import sqlite3
 import uuid
 
 
-ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
-DB_PATH = os.path.join(ROOT, "ghost-local", "content", "data", "ghost-local.db")
+ROOT = os.environ.get("PROJECT_ROOT") or os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
+DB_PATH = os.environ.get("GHOST_DB_PATH") or os.path.join(ROOT, "ghost-local", "content", "data", "ghost-local.db")
 
 
 def ghost_id():
