@@ -1,0 +1,30 @@
+# Ghost custom redirects for legacy julianovaes.com.br URLs.
+# Keep these as 301 redirects to preserve old Google-indexed addresses.
+301:
+  "^/marcar-consulta/?$": "/contato/"
+  "^/about-me/?$": "/sobre/"
+  "^/blog/?$": "/tag/artigos/"
+
+  "^/services/psicoterapia-individual/?$": "/atendimentos/"
+  "^/services/psicoterapia-de-casal/?$": "/atendimentos/"
+  "^/services/psicoterapia-de-grupo/?$": "/atendimentos/"
+
+  "^/tag/divorcio/?$": "/tag/artigos/"
+  "^/category/relacionamentos-afetivos/?$": "/tag/relacionamentos-afetivos/"
+  "^/category/tratamento-individual/?$": "/tag/tratamento-individual/"
+  "^/category/gravidez-e-maternidade/?$": "/tag/gravidez-e-maternidade/"
+  "^/category/terapia/?$": "/tag/terapia/"
+
+  "^/relacionamentos-afetivos/quando-nao-dura-para-sempre/?$": "/quando-nao-dura-para-sempre/"
+  "^/relacionamentos-afetivos/casamentos-felizes-nao-precisam-durar-para-sempre/?$": "/casamentos-felizes-nao-precisam-durar-para-sempre/"
+  "^/relacionamentos-afetivos/e-impossivel-ser-feliz-sozinho-sera/?$": "/e-impossivel-ser-feliz-sozinho/"
+  "^/gravidez-e-maternidade/grupo-terapeutico-akna/?$": "/grupo-terapeutico-akna/"
+  "^/tratamento-individual/perdi-o-momento-certo-para-engravidar-2/?$": "/perdi-o-momento-certo-para-engravidar/"
+  "^/terapia/psicoterapia/?$": "/psicoterapia/"
+
+  "^/tratamento-individual/?$": "/tag/tratamento-individual/"
+  "^/relacionamentos-afetivos/?$": "/tag/relacionamentos-afetivos/"
+  "^/gravidez-e-maternidade/?$": "/tag/gravidez-e-maternidade/"
+  "^/terapia/?$": "/tag/terapia/"
+
+302: {}

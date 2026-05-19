@@ -31,6 +31,12 @@ Para sincronizar alteracoes do tema versionado para a instalacao local:
 powershell.exe -NoProfile -ExecutionPolicy Bypass -File .\scripts\sync-ghost-theme.ps1
 ```
 
+Para sincronizar redirects legados:
+
+```powershell
+powershell.exe -NoProfile -ExecutionPolicy Bypass -File .\scripts\sync-ghost-redirects.ps1
+```
+
 Para recriar artigos e paginas locais:
 
 ```powershell
