@@ -52,3 +52,23 @@ C:\Users\Admin\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\p
 ## Observacoes
 
 As imagens oficiais de logo e posts estao versionadas dentro do tema, em `ghost-theme/julia-novaes/assets/images/`.
+
+## Trocar foto definitiva do hero
+
+Hoje o hero usa temporariamente:
+
+```txt
+ghost-theme/julia-novaes/assets/images/posts/post-psicoterapia.png
+```
+
+Para colocar a foto definitiva:
+
+1. Salve a imagem em `ghost-theme/julia-novaes/assets/images/hero-definitivo.png`.
+2. Abra `ghost-theme/julia-novaes/index.hbs`.
+3. Troque o caminho dentro do bloco `.hero-image` para:
+
+```hbs
+<img src="{{asset "images/hero-definitivo.png"}}" alt="Descricao da imagem">
+```
+
+4. Rode `scripts/sync-ghost-theme.ps1` no ambiente local ou copie o tema para o servidor.
