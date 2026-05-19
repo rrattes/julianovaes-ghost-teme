@@ -97,6 +97,15 @@ rsync -a --delete "${REPO_DIR}/ghost-theme/julia-novaes/" "${SITE_DIR}/content/t
 cp "${REPO_DIR}/redirects.yaml" "${SITE_DIR}/content/data/redirects.yaml"
 chown -R "$GHOST_USER:$GHOST_USER" "${SITE_DIR}/content"
 
+if [[ ! -f "$SQLITE_DB_PATH" ]]; then
+  sudo -H -u "$GHOST_USER" bash -lc "cd '$SITE_DIR' && NODE_ENV=production timeout 75s node current/index.js" || true
+fi
+
+if [[ ! -f "$SQLITE_DB_PATH" ]]; then
+  echo "ERROR: Ghost database was not created at ${SQLITE_DB_PATH}."
+  exit 1
+fi
+
 sudo -H -u "$GHOST_USER" bash -lc "PROJECT_ROOT='$REPO_DIR' GHOST_DB_PATH='$SQLITE_DB_PATH' GHOST_IMAGES_TARGET='${SITE_DIR}/content/images/2026/05' python3 '$REPO_DIR/scripts/seed-ghost-articles.py'"
 sudo -H -u "$GHOST_USER" bash -lc "PROJECT_ROOT='$REPO_DIR' GHOST_DB_PATH='$SQLITE_DB_PATH' python3 '$REPO_DIR/scripts/seed-ghost-pages.py'"
 
