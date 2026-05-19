@@ -131,10 +131,10 @@ PAGES = [
 </section>
 <section class="page-cta">
   <div>
-    <p class="kicker">Agendamento</p>
+    <p class="kicker">Disponibilidade</p>
     <h2>Vamos conversar sobre o que você está vivendo?</h2>
   </div>
-  <a class="button" href="https://wa.me/5521999988956?text=Ol%C3%A1%2C%20Julia.%20Gostaria%20de%20saber%20mais%20sobre%20psicoterapia%20individual.">Chamar no WhatsApp</a>
+  <a class="button" href="https://wa.me/5521999988956?text=Ol%C3%A1%2C%20Julia.%20Gostaria%20de%20solicitar%20disponibilidade%20para%20psicoterapia%20individual.">Solicitar disponibilidade</a>
 </section>
 """,
     },
@@ -169,10 +169,10 @@ PAGES = [
 </section>
 <section class="page-cta">
   <div>
-    <p class="kicker">Agendamento</p>
+    <p class="kicker">Disponibilidade</p>
     <h2>Quer conversar sobre a terapia de casal?</h2>
   </div>
-  <a class="button" href="https://wa.me/5521999988956?text=Ol%C3%A1%2C%20Julia.%20Gostaria%20de%20saber%20mais%20sobre%20psicoterapia%20de%20casal.">Chamar no WhatsApp</a>
+  <a class="button" href="https://wa.me/5521999988956?text=Ol%C3%A1%2C%20Julia.%20Gostaria%20de%20solicitar%20disponibilidade%20para%20psicoterapia%20de%20casal.">Solicitar disponibilidade</a>
 </section>
 """,
     },
@@ -207,10 +207,10 @@ PAGES = [
 </section>
 <section class="page-cta">
   <div>
-    <p class="kicker">Agendamento</p>
+    <p class="kicker">Disponibilidade</p>
     <h2>Vamos conversar sobre grupos disponíveis?</h2>
   </div>
-  <a class="button" href="https://wa.me/5521999988956?text=Ol%C3%A1%2C%20Julia.%20Gostaria%20de%20saber%20mais%20sobre%20psicoterapia%20de%20grupo.">Chamar no WhatsApp</a>
+  <a class="button" href="https://wa.me/5521999988956?text=Ol%C3%A1%2C%20Julia.%20Gostaria%20de%20solicitar%20disponibilidade%20para%20psicoterapia%20de%20grupo.">Solicitar disponibilidade</a>
 </section>
 """,
     },
@@ -222,10 +222,10 @@ PAGES = [
         "html": """
 <section class="contact-grid">
   <div class="contact-card">
-    <p class="kicker">Agendamento</p>
-    <h2>Para marcar uma consulta</h2>
+    <p class="kicker">Disponibilidade</p>
+    <h2>Solicitar disponibilidade</h2>
     <p>Entre em contato pelo WhatsApp para conversar sobre disponibilidade, formato de atendimento e próximos passos.</p>
-    <a class="button" href="https://wa.me/5521999988956">Chamar no WhatsApp</a>
+    <a class="button" href="https://wa.me/5521999988956?text=Ol%C3%A1%2C%20Julia.%20Gostaria%20de%20solicitar%20disponibilidade%20de%20agenda.">Entrar em contato</a>
   </div>
   <div class="contact-details">
     <article>
