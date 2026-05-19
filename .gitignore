@@ -1,0 +1,16 @@
+node_modules/
+.next/
+out/
+ghost-local/
+
+.env
+.env*.local
+
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+server.out.log
+server.err.log
+.ghost-bin/

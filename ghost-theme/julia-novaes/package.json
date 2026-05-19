@@ -1,0 +1,32 @@
+{
+  "name": "julia-novaes",
+  "description": "Tema Ghost customizado para o site da psicóloga Julia Novaes.",
+  "version": "0.1.0",
+  "author": {
+    "name": "Codex",
+    "email": "dev@example.com"
+  },
+  "keywords": [
+    "ghost",
+    "ghost-theme",
+    "julia-novaes"
+  ],
+  "engines": {
+    "ghost": ">=6.0.0"
+  },
+  "config": {
+    "card_assets": true,
+    "posts_per_page": 6,
+    "image_sizes": {
+      "s": {
+        "width": 480
+      },
+      "m": {
+        "width": 900
+      },
+      "l": {
+        "width": 1400
+      }
+    }
+  }
+}

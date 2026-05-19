@@ -1,0 +1,25 @@
+{{!< default}}
+
+<section class="content-page">
+  <div class="container">
+    <header class="content-header">
+      <p class="kicker">Artigos</p>
+      <h1>{{tag.name}}</h1>
+      {{#if tag.description}}<p>{{tag.description}}</p>{{/if}}
+    </header>
+    <div class="article-grid">
+      {{#foreach posts}}
+        <article class="article-card">
+          {{#if feature_image}}
+            <img src="{{img_url feature_image size="m"}}" alt="{{title}}">
+          {{else}}
+            <div class="placeholder-image"></div>
+          {{/if}}
+          <h3><a href="{{url}}">{{title}}</a></h3>
+          <p>{{excerpt words="18"}}</p>
+          <a class="read-link" href="{{url}}">Ler artigo <span aria-hidden="true">→</span></a>
+        </article>
+      {{/foreach}}
+    </div>
+  </div>
+</section>

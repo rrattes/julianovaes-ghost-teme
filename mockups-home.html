@@ -1,0 +1,1212 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Mockups Home - Julia Novaes Psicóloga</title>
+    <style>
+      :root {
+        color-scheme: light;
+        font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+        --ink: #26312f;
+        --muted: #64706d;
+        --line: rgba(38, 49, 47, 0.14);
+        --green: #2f6656;
+        --sage: #dce8df;
+        --rose: #b76f63;
+        --blue: #315a72;
+        --cream: #f8f4ed;
+        --paper: #fffdf8;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        background: #f5f1ea;
+        color: var(--ink);
+      }
+
+      a {
+        color: inherit;
+        text-decoration: none;
+      }
+
+      .switcher {
+        position: sticky;
+        top: 0;
+        z-index: 20;
+        display: flex;
+        gap: 8px;
+        align-items: center;
+        justify-content: center;
+        padding: 12px;
+        border-bottom: 1px solid var(--line);
+        background: rgba(255, 253, 248, 0.92);
+        backdrop-filter: blur(16px);
+      }
+
+      .switcher a {
+        border: 1px solid var(--line);
+        border-radius: 999px;
+        padding: 9px 14px;
+        font-size: 13px;
+        font-weight: 700;
+        background: #fff;
+      }
+
+      .mockup {
+        min-height: 100vh;
+        border-bottom: 10px solid #ece5da;
+      }
+
+      .wrap {
+        width: min(1160px, calc(100% - 40px));
+        margin: 0 auto;
+      }
+
+      .nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        min-height: 78px;
+        gap: 24px;
+      }
+
+      .brand {
+        display: grid;
+        gap: 2px;
+      }
+
+      .brand strong {
+        font-family: Georgia, "Times New Roman", serif;
+        font-size: 25px;
+        font-weight: 500;
+        letter-spacing: 0;
+      }
+
+      .brand span {
+        color: var(--muted);
+        font-size: 12px;
+        text-transform: uppercase;
+        letter-spacing: 0.14em;
+      }
+
+      .links {
+        display: flex;
+        gap: 24px;
+        color: #52605d;
+        font-size: 14px;
+        font-weight: 650;
+      }
+
+      .button {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 44px;
+        border: 0;
+        border-radius: 999px;
+        padding: 0 18px;
+        font-weight: 760;
+        line-height: 1;
+      }
+
+      .hero {
+        display: grid;
+        grid-template-columns: minmax(0, 1.04fr) minmax(360px, 0.86fr);
+        gap: 54px;
+        align-items: center;
+        padding: 58px 0 74px;
+      }
+
+      .eyebrow {
+        margin: 0 0 18px;
+        color: var(--rose);
+        font-size: 13px;
+        font-weight: 820;
+        letter-spacing: 0.15em;
+        text-transform: uppercase;
+      }
+
+      h1 {
+        margin: 0;
+        font-family: Georgia, "Times New Roman", serif;
+        font-weight: 500;
+        letter-spacing: 0;
+      }
+
+      .hero h1 {
+        max-width: 720px;
+        font-size: clamp(42px, 6vw, 78px);
+        line-height: 0.98;
+      }
+
+      .lead {
+        max-width: 620px;
+        margin: 24px 0 0;
+        color: #596661;
+        font-size: 19px;
+        line-height: 1.65;
+      }
+
+      .actions {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 12px;
+        margin-top: 34px;
+      }
+
+      .outline {
+        background: transparent;
+        border: 1px solid var(--line);
+      }
+
+      .visual {
+        min-height: 540px;
+        border-radius: 8px;
+        overflow: hidden;
+        position: relative;
+        box-shadow: 0 28px 80px rgba(46, 54, 51, 0.18);
+      }
+
+      .visual::before,
+      .visual::after {
+        content: "";
+        position: absolute;
+        inset: 0;
+      }
+
+      .visual::before {
+        background:
+          radial-gradient(circle at 52% 18%, rgba(255, 255, 255, 0.72) 0 12%, transparent 13%),
+          linear-gradient(145deg, rgba(42, 81, 67, 0.16), rgba(183, 111, 99, 0.22)),
+          linear-gradient(90deg, #ded3c3 0 38%, #efe7dc 38% 70%, #c2d0c5 70%);
+      }
+
+      .visual::after {
+        inset: auto 9% 8% 12%;
+        height: 55%;
+        border-radius: 8px 8px 0 0;
+        background:
+          linear-gradient(90deg, rgba(47, 102, 86, 0.75), rgba(47, 102, 86, 0.12)),
+          linear-gradient(#f8f4ed, #d6c5b5);
+        clip-path: polygon(8% 100%, 18% 23%, 35% 5%, 50% 27%, 61% 10%, 80% 35%, 92% 100%);
+        opacity: 0.78;
+      }
+
+      .services {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 18px;
+        padding: 0 0 70px;
+      }
+
+      .service {
+        min-height: 184px;
+        border: 1px solid var(--line);
+        border-radius: 8px;
+        padding: 26px;
+        background: rgba(255, 255, 255, 0.72);
+      }
+
+      .service h2 {
+        margin: 0 0 12px;
+        font-family: Georgia, "Times New Roman", serif;
+        font-size: 25px;
+        font-weight: 500;
+      }
+
+      .service p {
+        margin: 0;
+        color: var(--muted);
+        line-height: 1.55;
+      }
+
+      .style-a {
+        --olive: #596044;
+        --olive-dark: #4d543a;
+        --warm: #f7f2eb;
+        --warm-2: #efe7dc;
+        --text: #231c18;
+        --soft: #756d63;
+        background: var(--warm);
+        color: var(--text);
+        border-bottom: 10px solid #e5dbce;
+      }
+
+      .style-a .wrap {
+        width: min(1180px, calc(100% - 56px));
+      }
+
+      .style-a .nav {
+        min-height: 84px;
+        position: relative;
+        z-index: 2;
+      }
+
+      .style-a .brand {
+        justify-items: center;
+      }
+
+      .style-a .brand strong {
+        font-size: 24px;
+        text-transform: uppercase;
+      }
+
+      .style-a .brand span {
+        color: #4d453d;
+        font-size: 11px;
+        font-weight: 700;
+        letter-spacing: 0.18em;
+      }
+
+      .style-a .links {
+        gap: 30px;
+        color: #2c2824;
+        font-size: 13px;
+        font-weight: 560;
+        letter-spacing: 0.02em;
+        text-transform: none;
+      }
+
+      .style-a .button {
+        min-height: 46px;
+        background: var(--olive);
+        color: #fff;
+        padding: 0 26px;
+        font-size: 12px;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+      }
+
+      .style-a .outline {
+        background: transparent;
+        border-color: rgba(35, 28, 24, 0.22);
+        color: var(--olive-dark);
+      }
+
+      .style-a .hero {
+        grid-template-columns: minmax(420px, 1fr) minmax(360px, 0.72fr);
+        gap: 58px;
+        min-height: 540px;
+        padding: 28px 0 46px;
+      }
+
+      .style-a .eyebrow {
+        display: flex;
+        gap: 14px;
+        align-items: center;
+        margin-bottom: 22px;
+        color: #332c26;
+        font-size: 12px;
+        letter-spacing: 0.18em;
+      }
+
+      .style-a .eyebrow::before {
+        content: "";
+        display: inline-block;
+        width: 34px;
+        height: 1px;
+        background: currentColor;
+      }
+
+      .style-a .hero h1 {
+        max-width: 560px;
+        font-size: clamp(42px, 4.6vw, 62px);
+        line-height: 1.06;
+      }
+
+      .style-a .lead {
+        max-width: 520px;
+        color: #3e3833;
+        font-size: 17px;
+        line-height: 1.75;
+      }
+
+      .style-a .text-link {
+        display: inline-flex;
+        align-items: center;
+        gap: 12px;
+        min-height: 46px;
+        padding: 0 10px;
+        color: #332c26;
+        font-size: 12px;
+        font-weight: 850;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+      }
+
+      .style-a .hero-photo {
+        align-self: stretch;
+        min-height: 430px;
+        max-width: 510px;
+        width: 100%;
+        justify-self: end;
+        border-radius: 0;
+        background:
+          linear-gradient(90deg, rgba(247, 242, 235, 0.1), rgba(247, 242, 235, 0)),
+          url("assets/hero-julia-crop.png");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+      }
+
+      .style-a .section {
+        padding: 72px 0;
+      }
+
+      .style-a .section-head {
+        max-width: 640px;
+        margin: 0 auto 28px;
+        text-align: center;
+      }
+
+      .style-a .kicker {
+        margin: 0 0 12px;
+        color: var(--olive-dark);
+        font-size: 12px;
+        font-weight: 850;
+        letter-spacing: 0.16em;
+        text-transform: uppercase;
+      }
+
+      .style-a .section-head h2,
+      .style-a .about-copy h2,
+      .style-a .article-intro h2,
+      .style-a .cta h2 {
+        margin: 0;
+        font-family: Georgia, "Times New Roman", serif;
+        font-size: clamp(31px, 3.2vw, 44px);
+        font-weight: 500;
+        line-height: 1.08;
+      }
+
+      .style-a .services {
+        padding: 0;
+      }
+
+      .style-a .service {
+        min-height: 230px;
+        padding: 30px 30px 26px;
+        background: rgba(255, 253, 248, 0.64);
+        border-color: rgba(35, 28, 24, 0.16);
+      }
+
+      .style-a .service-top {
+        display: grid;
+        grid-template-columns: 70px 1fr;
+        gap: 22px;
+        align-items: center;
+        margin-bottom: 18px;
+      }
+
+      .style-a .service-icon {
+        display: grid;
+        place-items: center;
+        width: 70px;
+        height: 70px;
+        border-radius: 999px;
+        background: #e7e0d5;
+        color: #5d6046;
+      }
+
+      .style-a .service h2 {
+        margin: 0;
+        color: var(--text);
+        font-size: 28px;
+        line-height: 1.12;
+      }
+
+      .style-a .service p {
+        color: #4f4840;
+        font-size: 14px;
+        line-height: 1.7;
+      }
+
+      .style-a .service a,
+      .style-a .article-card a,
+      .style-a .article-intro a,
+      .style-a .about-copy a {
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+        margin-top: 20px;
+        color: #2f2a25;
+        font-size: 12px;
+        font-weight: 850;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+      }
+
+      .style-a .about {
+        display: grid;
+        grid-template-columns: minmax(300px, 0.56fr) minmax(0, 1fr);
+        background: #f0e9df;
+      }
+
+      .style-a .about-image {
+        min-height: 330px;
+        background:
+          linear-gradient(rgba(78, 72, 61, 0.04), rgba(78, 72, 61, 0.06)),
+          url("assets/consultorio-crop.png");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+      }
+
+      .style-a .about-body {
+        display: grid;
+        grid-template-columns: minmax(300px, 1fr) 280px;
+        gap: 48px;
+        align-items: center;
+        padding: 56px min(5.5vw, 72px);
+      }
+
+      .style-a .about-copy h2 {
+        font-size: clamp(32px, 3vw, 40px);
+      }
+
+      .style-a .about-copy p {
+        max-width: 560px;
+        color: #514941;
+        line-height: 1.7;
+      }
+
+      .style-a .facts {
+        display: grid;
+      }
+
+      .style-a .fact {
+        display: grid;
+        grid-template-columns: 34px 1fr;
+        gap: 16px;
+        align-items: center;
+        padding: 18px 0;
+        border-bottom: 1px solid rgba(35, 28, 24, 0.14);
+        color: #3d3832;
+        font-size: 14px;
+        line-height: 1.45;
+      }
+
+      .style-a .cta {
+        padding: 34px 0;
+        background:
+          linear-gradient(90deg, rgba(76, 82, 57, 0.96), rgba(76, 82, 57, 0.84)),
+          url("assets/referencia-home-julia.png");
+        background-size: cover;
+        background-position: center;
+        color: #fff;
+      }
+
+      .style-a .cta .wrap {
+        display: grid;
+        grid-template-columns: 1fr auto;
+        gap: 30px;
+        align-items: center;
+      }
+
+      .style-a .cta h2 {
+        font-size: clamp(30px, 3vw, 42px);
+      }
+
+      .style-a .cta p {
+        max-width: 420px;
+        margin: 8px 0 0;
+        color: rgba(255,255,255,.82);
+        line-height: 1.6;
+      }
+
+      .style-a .cta-actions {
+        display: flex;
+        gap: 14px;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+      }
+
+      .style-a .cta .button {
+        background: #fff;
+        color: #4e5239;
+      }
+
+      .style-a .cta .outline {
+        background: transparent;
+        border-color: rgba(255,255,255,.55);
+        color: #fff;
+      }
+
+      .style-a .articles {
+        display: grid;
+        grid-template-columns: 280px 1fr;
+        gap: 58px;
+        align-items: start;
+      }
+
+      .style-a .article-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 22px;
+      }
+
+      .style-a .article-thumb {
+        height: 122px;
+        margin-bottom: 20px;
+        background:
+          linear-gradient(rgba(64, 71, 52, 0.04), rgba(64, 71, 52, 0.12)),
+          url("assets/artigo-1-crop.png");
+        background-size: cover;
+        background-position: center;
+      }
+
+      .style-a .article-card:nth-child(2) .article-thumb {
+        background-image:
+          linear-gradient(rgba(64, 71, 52, 0.04), rgba(64, 71, 52, 0.12)),
+          url("assets/artigo-2-crop.png");
+      }
+
+      .style-a .article-card:nth-child(3) .article-thumb {
+        background-image:
+          linear-gradient(rgba(64, 71, 52, 0.04), rgba(64, 71, 52, 0.12)),
+          url("assets/artigo-3-crop.png");
+      }
+
+      .style-a .article-card h3 {
+        margin: 0 0 8px;
+        font-size: 18px;
+      }
+
+      .style-a .article-card p {
+        margin: 0;
+        color: #635b52;
+        line-height: 1.55;
+      }
+
+      .style-a .footer {
+        padding: 38px 0 18px;
+        border-top: 1px solid rgba(35, 28, 24, 0.12);
+        background: #eee6dc;
+      }
+
+      .style-a .footer-grid {
+        display: grid;
+        grid-template-columns: 1.1fr .8fr .8fr .8fr;
+        gap: 42px;
+        color: #4c453e;
+        font-size: 13px;
+        line-height: 1.7;
+      }
+
+      .style-a .footer h3 {
+        margin: 0 0 12px;
+        color: #1f1a16;
+        font-size: 12px;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+      }
+
+      .style-a .footer-brand strong {
+        display: block;
+        margin-bottom: 2px;
+        font-family: Georgia, "Times New Roman", serif;
+        color: #1f1a16;
+        font-size: 25px;
+        font-weight: 500;
+        text-transform: uppercase;
+      }
+
+      .style-a .footer-brand span {
+        display: block;
+        margin-bottom: 18px;
+        font-size: 11px;
+        font-weight: 800;
+        letter-spacing: 0.18em;
+        text-transform: uppercase;
+      }
+
+      .style-a .footer-bottom {
+        margin-top: 28px;
+        padding-top: 16px;
+        border-top: 1px solid rgba(35, 28, 24, 0.12);
+        color: #736b62;
+        font-size: 12px;
+      }
+
+      .style-b {
+        background: #f6f8f7;
+      }
+
+      .style-b .wrap {
+        width: min(1220px, calc(100% - 40px));
+      }
+
+      .style-b .nav {
+        border-bottom: 1px solid var(--line);
+      }
+
+      .style-b .hero {
+        grid-template-columns: minmax(0, 0.92fr) minmax(420px, 1.08fr);
+        gap: 36px;
+        padding-top: 48px;
+      }
+
+      .style-b .hero h1 {
+        font-family: Inter, ui-sans-serif, system-ui, sans-serif;
+        font-size: clamp(40px, 5vw, 68px);
+        font-weight: 780;
+        line-height: 1.02;
+      }
+
+      .style-b .button {
+        background: var(--blue);
+        color: #fff;
+        border-radius: 6px;
+      }
+
+      .style-b .outline {
+        background: #fff;
+        color: var(--blue);
+      }
+
+      .style-b .visual {
+        min-height: 500px;
+        box-shadow: none;
+        border: 1px solid var(--line);
+        background:
+          linear-gradient(180deg, rgba(255,255,255,.7), rgba(255,255,255,.22)),
+          repeating-linear-gradient(90deg, rgba(49, 90, 114, 0.12) 0 1px, transparent 1px 72px),
+          linear-gradient(140deg, #dfe9e5, #f8fbfa 52%, #c9d9d2);
+      }
+
+      .style-b .visual::after {
+        inset: 44px 44px auto auto;
+        width: 238px;
+        height: 360px;
+        border: 1px solid rgba(49, 90, 114, 0.22);
+        border-radius: 8px;
+        background: #fff;
+        clip-path: none;
+        opacity: 1;
+        box-shadow: -240px 116px 0 -36px rgba(49, 90, 114, 0.16), -126px 204px 0 -12px rgba(183, 111, 99, 0.16);
+      }
+
+      .style-b .services {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+      }
+
+      .style-b .service {
+        background: #fff;
+      }
+
+      .style-c {
+        background: #fbf7f2;
+      }
+
+      .style-c .nav {
+        min-height: 86px;
+      }
+
+      .style-c .hero {
+        grid-template-columns: 1fr;
+        min-height: 650px;
+        padding: 30px 0 44px;
+        text-align: center;
+      }
+
+      .style-c .hero-copy {
+        margin: 0 auto;
+      }
+
+      .style-c .hero h1 {
+        max-width: 900px;
+        margin: 0 auto;
+        color: #202927;
+        font-size: clamp(44px, 7.3vw, 88px);
+      }
+
+      .style-c .lead {
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .style-c .actions {
+        justify-content: center;
+      }
+
+      .style-c .button {
+        background: #8f584f;
+        color: #fff;
+      }
+
+      .style-c .outline {
+        background: #fff;
+        color: #8f584f;
+      }
+
+      .style-c .visual-band {
+        display: grid;
+        grid-template-columns: 1.05fr 0.72fr 1.05fr;
+        gap: 18px;
+        align-items: end;
+        margin-top: 42px;
+      }
+
+      .style-c .photo {
+        min-height: 260px;
+        border-radius: 8px;
+        background:
+          radial-gradient(circle at 50% 20%, rgba(255,255,255,.72), transparent 18%),
+          linear-gradient(145deg, rgba(143,88,79,.24), rgba(47,102,86,.18)),
+          linear-gradient(90deg, #e1d2c3, #f5eee4 52%, #cbd8ce);
+        box-shadow: 0 20px 48px rgba(64, 55, 46, 0.12);
+      }
+
+      .style-c .photo:nth-child(2) {
+        min-height: 330px;
+        background:
+          radial-gradient(circle at 55% 18%, rgba(255,255,255,.82), transparent 16%),
+          linear-gradient(160deg, rgba(49,90,114,.2), rgba(143,88,79,.24)),
+          linear-gradient(90deg, #d9e4df, #fff9ef 54%, #d0b8ad);
+      }
+
+      .style-c .services {
+        padding-top: 18px;
+      }
+
+      .mockup-label {
+        display: inline-flex;
+        margin-bottom: 16px;
+        border: 1px solid var(--line);
+        border-radius: 999px;
+        padding: 8px 12px;
+        color: var(--muted);
+        font-size: 13px;
+        font-weight: 760;
+        background: rgba(255, 255, 255, 0.64);
+      }
+
+      @media (max-width: 920px) {
+        .links {
+          display: none;
+        }
+
+        .hero,
+        .style-b .hero {
+          grid-template-columns: 1fr;
+          padding-top: 32px;
+        }
+
+        .visual,
+        .style-b .visual {
+          min-height: 360px;
+        }
+
+        .services,
+        .style-b .services {
+          grid-template-columns: 1fr;
+        }
+
+        .style-c .visual-band {
+          grid-template-columns: 1fr;
+        }
+
+        .style-a .hero {
+          grid-template-columns: 1fr;
+          min-height: auto;
+        }
+
+        .style-a .hero-photo {
+          min-height: 430px;
+          background-size: 1300px auto;
+          background-position: right -80px top -34px;
+        }
+
+        .style-a .about,
+        .style-a .about-body,
+        .style-a .cta .wrap,
+        .style-a .articles,
+        .style-a .footer-grid {
+          grid-template-columns: 1fr;
+        }
+
+        .style-a .about-body {
+          padding: 44px 28px;
+        }
+
+        .style-a .cta-actions {
+          justify-content: flex-start;
+        }
+
+        .style-a .article-grid {
+          grid-template-columns: 1fr;
+        }
+      }
+
+      @media (max-width: 560px) {
+        .wrap {
+          width: min(100% - 28px, 1160px);
+        }
+
+        .switcher {
+          overflow-x: auto;
+          justify-content: flex-start;
+        }
+
+        .brand strong {
+          font-size: 21px;
+        }
+
+        .hero h1,
+        .style-b .hero h1,
+        .style-c .hero h1 {
+          font-size: 39px;
+        }
+
+        .lead {
+          font-size: 17px;
+        }
+
+        .style-a .wrap {
+          width: min(100% - 28px, 1180px);
+        }
+
+        .style-a .nav {
+          min-height: 76px;
+        }
+
+        .style-a .button,
+        .style-a .text-link {
+          width: 100%;
+        }
+
+        .style-a .hero h1 {
+          font-size: 39px;
+        }
+
+        .style-a .hero-photo {
+          min-height: 330px;
+          background-size: 980px auto;
+          background-position: right -60px top -24px;
+        }
+
+        .style-a .section {
+          padding: 52px 0;
+        }
+
+        .style-a .service-top {
+          grid-template-columns: 58px 1fr;
+          gap: 16px;
+        }
+
+        .style-a .service-icon {
+          width: 58px;
+          height: 58px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="switcher" aria-label="Escolher estilo">
+      <a href="#estilo-a">Estilo 1 - Acolhedor</a>
+      <a href="#estilo-b">Estilo 2 - Clínico</a>
+      <a href="#estilo-c">Estilo 3 - Editorial</a>
+    </nav>
+
+    <main>
+      <section class="mockup style-a" id="estilo-a">
+        <div class="wrap">
+          <header class="nav">
+            <a class="brand" href="#">
+              <strong>Julia Novaes</strong>
+              <span>Psicóloga</span>
+            </a>
+            <nav class="links" aria-label="Menu estilo 1">
+              <a href="#">Início</a>
+              <a href="#">Sobre mim</a>
+              <a href="#">Atendimentos</a>
+              <a href="#">Artigos</a>
+              <a href="#">Contato</a>
+            </nav>
+            <a class="button" href="#">Agendar consulta</a>
+          </header>
+
+          <div class="hero">
+            <div class="hero-copy">
+              <p class="eyebrow">Psicologia com escuta e presença</p>
+              <h1>Um espaço para compreender sua história, seus vínculos e construir possibilidades de existência.</h1>
+              <p class="lead">
+                A psicoterapia é um encontro ético, cuidadoso e singular que favorece compreensão,
+                escolhas mais conscientes e relações mais verdadeiras.
+              </p>
+              <div class="actions">
+                <a class="button" href="#">Agendar consulta</a>
+                <a class="text-link" href="#">Conheça os atendimentos <span aria-hidden="true">→</span></a>
+              </div>
+            </div>
+            <div class="hero-photo" aria-hidden="true"></div>
+          </div>
+        </div>
+
+        <div class="section">
+          <div class="wrap">
+            <div class="section-head">
+              <p class="kicker">Atendimentos</p>
+              <h2>Cuidado psicológico para diferentes momentos e necessidades</h2>
+            </div>
+
+            <div class="services">
+              <article class="service">
+                <div class="service-top">
+                  <span class="service-icon" aria-hidden="true">
+                    <svg width="38" height="38" viewBox="0 0 48 48" fill="none">
+                      <circle cx="24" cy="15" r="7" stroke="currentColor" stroke-width="2" />
+                      <path d="M11 39c1.6-8 6.1-12 13-12s11.4 4 13 12" stroke="currentColor" stroke-width="2" />
+                    </svg>
+                  </span>
+                  <h2>Psicoterapia Individual</h2>
+                </div>
+                <p>Um espaço de escuta para compreender sua história, emoções e padrões de relação e construir novos caminhos com mais liberdade e sentido.</p>
+                <a href="#">Saiba mais <span aria-hidden="true">→</span></a>
+              </article>
+              <article class="service">
+                <div class="service-top">
+                  <span class="service-icon" aria-hidden="true">
+                    <svg width="42" height="38" viewBox="0 0 52 48" fill="none">
+                      <circle cx="18" cy="15" r="6" stroke="currentColor" stroke-width="2" />
+                      <circle cx="34" cy="15" r="6" stroke="currentColor" stroke-width="2" />
+                      <path d="M7 39c1.3-7 5-10.5 11-10.5S27.7 32 29 39" stroke="currentColor" stroke-width="2" />
+                      <path d="M23 39c1.3-7 5-10.5 11-10.5S43.7 32 45 39" stroke="currentColor" stroke-width="2" />
+                    </svg>
+                  </span>
+                  <h2>Psicoterapia de Casal</h2>
+                </div>
+                <p>Acolhimento e reflexão para o casal cuidar da comunicação, fortalecer vínculos e encontrar novos modos de se relacionar.</p>
+                <a href="#">Saiba mais <span aria-hidden="true">→</span></a>
+              </article>
+              <article class="service">
+                <div class="service-top">
+                  <span class="service-icon" aria-hidden="true">
+                    <svg width="44" height="38" viewBox="0 0 56 48" fill="none">
+                      <circle cx="28" cy="13" r="5.5" stroke="currentColor" stroke-width="2" />
+                      <circle cx="15" cy="19" r="5" stroke="currentColor" stroke-width="2" />
+                      <circle cx="41" cy="19" r="5" stroke="currentColor" stroke-width="2" />
+                      <path d="M17 39c1.5-7 5.2-10.5 11-10.5S37.5 32 39 39" stroke="currentColor" stroke-width="2" />
+                      <path d="M5 39c1.1-5.3 4.2-8 9.5-8" stroke="currentColor" stroke-width="2" />
+                      <path d="M51 39c-1.1-5.3-4.2-8-9.5-8" stroke="currentColor" stroke-width="2" />
+                    </svg>
+                  </span>
+                  <h2>Psicoterapia de Grupo</h2>
+                </div>
+                <p>O encontro com outras histórias ajuda a ampliar percepções, elaborar questões e construir pertencimento de forma segura.</p>
+                <a href="#">Saiba mais <span aria-hidden="true">→</span></a>
+              </article>
+            </div>
+          </div>
+        </div>
+
+        <section class="about">
+          <div class="about-image" aria-hidden="true"></div>
+          <div class="about-body">
+            <div class="about-copy">
+              <p class="kicker">Sobre mim</p>
+              <h2>Psicóloga clínica com abordagem fenomenológico-existencial</h2>
+              <p>Acredito na importância de uma escuta verdadeira e na construção de um espaço seguro para que cada pessoa possa se compreender em sua singularidade e autoria.</p>
+              <a href="#">Conhecer minha trajetória <span aria-hidden="true">→</span></a>
+            </div>
+            <div class="facts">
+              <div class="fact">
+                <span aria-hidden="true">◎</span>
+                <span>Atendimento para adultos, casais e grupos</span>
+              </div>
+              <div class="fact">
+                <span aria-hidden="true">◌</span>
+                <span>Abordagem fenomenológico-existencial</span>
+              </div>
+              <div class="fact">
+                <span aria-hidden="true">◇</span>
+                <span>Atendimento presencial e online</span>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="cta">
+          <div class="wrap">
+            <div>
+              <h2>Agende sua consulta</h2>
+              <p>Vamos conversar sobre o que você está vivendo e sobre como posso te acompanhar.</p>
+            </div>
+            <div class="cta-actions">
+              <a class="button" href="#">Agendar pelo WhatsApp</a>
+              <a class="button outline" href="#">Outras formas de contato</a>
+            </div>
+          </div>
+        </section>
+
+        <section class="section">
+          <div class="wrap articles">
+            <div class="article-intro">
+              <p class="kicker">Artigos</p>
+              <h2>Reflexões para a vida e as relações</h2>
+              <a href="#">Ver todos os artigos <span aria-hidden="true">→</span></a>
+            </div>
+            <div class="article-grid">
+              <article class="article-card">
+                <div class="article-thumb" aria-hidden="true"></div>
+                <h3>É impossível ser feliz sozinho?</h3>
+                <p>Sobre solidão, escolha e relações verdadeiras.</p>
+                <a href="#">Ler artigo <span aria-hidden="true">→</span></a>
+              </article>
+              <article class="article-card">
+                <div class="article-thumb" aria-hidden="true"></div>
+                <h3>Quando não dura para sempre</h3>
+                <p>Reflexões sobre término de relacionamentos e recomeços.</p>
+                <a href="#">Ler artigo <span aria-hidden="true">→</span></a>
+              </article>
+              <article class="article-card">
+                <div class="article-thumb" aria-hidden="true"></div>
+                <h3>Casamentos: afinal, para quê?</h3>
+                <p>Sobre expectativas, idealizações e a vida a dois.</p>
+                <a href="#">Ler artigo <span aria-hidden="true">→</span></a>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <footer class="footer">
+          <div class="wrap">
+            <div class="footer-grid">
+              <div class="footer-brand">
+                <strong>Julia Novaes</strong>
+                <span>Psicóloga</span>
+                <p>Psicologia com escuta, ética e presença para compreender o que você vive e construir novas possibilidades.</p>
+              </div>
+              <div>
+                <h3>Navegação</h3>
+                <div>Início<br />Sobre mim<br />Atendimentos<br />Artigos<br />Contato</div>
+              </div>
+              <div>
+                <h3>Atendimento</h3>
+                <div>Online e presencial<br />WhatsApp: (21) 99998-8956<br />julianovaess@gmail.com<br />Rio de Janeiro - RJ</div>
+              </div>
+              <div>
+                <h3>Redes sociais</h3>
+                <div>Instagram<br />LinkedIn</div>
+              </div>
+            </div>
+            <div class="footer-bottom">© 2026 Julia Novaes. Todos os direitos reservados.</div>
+          </div>
+        </footer>
+      </section>
+
+      <section class="mockup style-b" id="estilo-b">
+        <div class="wrap">
+          <header class="nav">
+            <a class="brand" href="#">
+              <strong>Julia Novaes</strong>
+              <span>CRP e dados profissionais</span>
+            </a>
+            <nav class="links" aria-label="Menu estilo 2">
+              <a href="#">Início</a>
+              <a href="#">Psicoterapia Individual</a>
+              <a href="#">Terapia de Casal</a>
+              <a href="#">Contato</a>
+            </nav>
+            <a class="button" href="#">WhatsApp</a>
+          </header>
+
+          <div class="hero">
+            <div class="hero-copy">
+              <span class="mockup-label">Estilo 2 - Clínico e direto</span>
+              <p class="eyebrow">Vila da Penha, Tijuca e atendimento online</p>
+              <h1>Psicoterapia com clareza, ética e cuidado profissional.</h1>
+              <p class="lead">
+                Atendimento clínico para adultos, casais e grupos. Um espaço para refletir sobre relações,
+                escolhas, sofrimento e possibilidades de transformação.
+              </p>
+              <div class="actions">
+                <a class="button" href="#">Marcar atendimento</a>
+                <a class="button outline" href="#">Ver endereços</a>
+              </div>
+            </div>
+            <div class="visual" aria-hidden="true"></div>
+          </div>
+
+          <div class="services">
+            <article class="service">
+              <h2>Online</h2>
+              <p>Atendimento remoto para quem busca continuidade e flexibilidade.</p>
+            </article>
+            <article class="service">
+              <h2>Presencial</h2>
+              <p>Consultórios no Rio de Janeiro, mediante confirmação de agenda.</p>
+            </article>
+            <article class="service">
+              <h2>Casais</h2>
+              <p>Foco na relação e na comunicação entre os parceiros.</p>
+            </article>
+            <article class="service">
+              <h2>Artigos</h2>
+              <p>Textos sobre psicoterapia, relacionamentos e saúde mental.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="mockup style-c" id="estilo-c">
+        <div class="wrap">
+          <header class="nav">
+            <a class="brand" href="#">
+              <strong>Julia Novaes</strong>
+              <span>Psicologia clínica</span>
+            </a>
+            <nav class="links" aria-label="Menu estilo 3">
+              <a href="#">Sobre</a>
+              <a href="#">Abordagem</a>
+              <a href="#">Atendimentos</a>
+              <a href="#">Contato</a>
+            </nav>
+            <a class="button" href="#">Agendar</a>
+          </header>
+
+          <div class="hero">
+            <div class="hero-copy">
+              <span class="mockup-label">Estilo 3 - Editorial e sofisticado</span>
+              <p class="eyebrow">Psicoterapia fenomenológico-existencial</p>
+              <h1>Escuta, presença e reflexão para atravessar momentos difíceis.</h1>
+              <p class="lead">
+                Um site com linguagem mais autoral, visual leve e foco na construção de confiança
+                antes do convite para o agendamento.
+              </p>
+              <div class="actions">
+                <a class="button" href="#">Iniciar contato</a>
+                <a class="button outline" href="#">Ler sobre a abordagem</a>
+              </div>
+              <div class="visual-band" aria-hidden="true">
+                <div class="photo"></div>
+                <div class="photo"></div>
+                <div class="photo"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="services">
+            <article class="service">
+              <h2>Processo</h2>
+              <p>A terapia acontece na relação construída entre paciente e psicóloga, sessão a sessão.</p>
+            </article>
+            <article class="service">
+              <h2>Relações</h2>
+              <p>Atendimentos voltados a vínculos, comunicação, escolhas e modos de estar com o outro.</p>
+            </article>
+            <article class="service">
+              <h2>Cuidado</h2>
+              <p>Um espaço ético para ouvir-se, perceber-se e elaborar novas possibilidades.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
