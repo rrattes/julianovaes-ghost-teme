@@ -522,6 +522,98 @@ h3 {
   margin-top: 18px;
 }
 
+.article-list-section {
+  margin-top: 72px;
+  border-top: 1px solid rgba(222, 210, 195, 0.9);
+  padding-top: 54px;
+}
+
+.article-list-heading {
+  max-width: 640px;
+  margin-bottom: 32px;
+}
+
+.article-list-heading h2 {
+  margin: 0;
+  color: var(--text);
+  font-size: clamp(34px, 4vw, 46px);
+  line-height: 1.08;
+}
+
+.article-list-heading p:last-child {
+  margin: 14px 0 0;
+  color: var(--muted);
+  line-height: 1.7;
+}
+
+.article-list {
+  display: grid;
+  gap: 18px;
+}
+
+.article-list-item {
+  display: grid;
+  grid-template-columns: minmax(180px, 0.34fr) minmax(0, 1fr);
+  gap: 28px;
+  align-items: stretch;
+  border: 1px solid rgba(222, 210, 195, 0.9);
+  background: rgba(255, 253, 248, 0.74);
+  padding: 18px;
+}
+
+.article-list-image {
+  display: block;
+  min-height: 150px;
+  background: var(--surface-soft);
+}
+
+.article-list-image img,
+.article-list-image .placeholder-image {
+  width: 100%;
+  height: 100%;
+  min-height: 150px;
+  border: 1px solid rgba(222, 210, 195, 0.76);
+  object-fit: cover;
+}
+
+.article-list-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 8px 12px 8px 0;
+}
+
+.article-list-date {
+  margin: 0 0 10px;
+  color: var(--terracotta);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.article-list-title {
+  margin: 0;
+  font-size: clamp(25px, 2.2vw, 32px);
+  line-height: 1.1;
+}
+
+.article-list-excerpt {
+  margin: 12px 0 0;
+  color: var(--muted);
+  line-height: 1.7;
+}
+
+.article-list-link {
+  margin-top: 18px;
+  align-self: flex-start;
+  color: var(--accent-dark);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.055em;
+  text-transform: uppercase;
+}
+
 .section-footer-link {
   display: flex;
   justify-content: center;
@@ -1139,9 +1231,14 @@ h3 {
   .clinical-readings .article-grid,
   .page-list ul,
   .related-grid,
+  .article-list-item,
   .service-list article,
   .first-contact-list {
     grid-template-columns: 1fr;
+  }
+
+  .article-list-content {
+    padding: 8px 4px 4px;
   }
 
   .page-cta .button {
@@ -1222,8 +1319,20 @@ h3 {
   .contact-details article,
   .page-list li,
   .related-grid article,
+  .article-list-item,
   .first-contact-list article {
     padding: 26px;
+  }
+
+  .article-list-section {
+    margin-top: 54px;
+    padding-top: 42px;
+  }
+
+  .article-list-image,
+  .article-list-image img,
+  .article-list-image .placeholder-image {
+    min-height: 190px;
   }
 
   .post-contact-cta {
