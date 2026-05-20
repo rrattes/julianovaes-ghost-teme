@@ -1,10 +1,13 @@
 :root {
   --background: #f7f2ea;
+  --header-bg: #faf7f2;
+  --hero-bg: #ece2d4;
   --surface: #fffdf8;
   --surface-soft: #efe6da;
   --text: #2f2a25;
   --muted: #6e6258;
   --border: #ded2c3;
+  --header-border: #e1d7c9;
   --accent: #3f5a4a;
   --accent-hover: #263b31;
   --accent-dark: #263b31;
@@ -129,8 +132,8 @@ h3 {
 }
 
 .site-header {
-  border-bottom: 1px solid rgba(222, 210, 195, 0.82);
-  background: rgba(247, 242, 234, 0.96);
+  border-bottom: 1px solid var(--header-border);
+  background: var(--header-bg);
 }
 
 .header-inner {
@@ -188,6 +191,7 @@ h3 {
 }
 
 .hero {
+  background: var(--hero-bg);
   padding: 78px 0 108px;
 }
 
