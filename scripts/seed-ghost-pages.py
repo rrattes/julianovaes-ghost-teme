@@ -208,16 +208,6 @@ PAGES = [
     <p>A proposta é construir uma escuta cuidadosa sobre a forma como a pessoa se relaciona consigo, com os outros, com suas escolhas e com as exigências que atravessam sua vida.</p>
   </div>
 </section>
-<section class="page-split">
-  <div>
-    <p class="kicker">Primeiro contato</p>
-    <h2>Como funciona o primeiro contato</h2>
-  </div>
-  <div>
-    <p>O primeiro contato pode ser feito pelo WhatsApp profissional. A partir dele, são enviadas informações sobre disponibilidade de agenda, formato dos atendimentos, valores e funcionamento do processo.</p>
-    <p>Os atendimentos são particulares e realizados em horário previamente reservado.</p>
-  </div>
-</section>
 <section class="page-cta">
   <div>
     <p class="kicker">Disponibilidade</p>

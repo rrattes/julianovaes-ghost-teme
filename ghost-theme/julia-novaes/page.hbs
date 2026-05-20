@@ -15,6 +15,21 @@
       <div class="content-body">
         {{content}}
       </div>
+      {{#match slug "atendimentos"}}
+        {{> first-contact}}
+      {{/match}}
+      {{#match slug "psicoterapia-individual"}}
+        {{> first-contact}}
+      {{/match}}
+      {{#match slug "psicoterapia-de-casal"}}
+        {{> first-contact}}
+      {{/match}}
+      {{#match slug "psicoterapia-de-grupo"}}
+        {{> first-contact}}
+      {{/match}}
+      {{#match slug "psicoterapia-alta-exigencia-emocional"}}
+        {{> first-contact}}
+      {{/match}}
     </div>
   </article>
 {{/post}}

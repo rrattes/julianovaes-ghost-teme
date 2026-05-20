@@ -537,7 +537,8 @@ h3 {
 .page-list,
 .service-list,
 .contact-grid,
-.page-cta {
+.page-cta,
+.first-contact {
   margin: 42px 0;
 }
 
@@ -646,6 +647,54 @@ h3 {
 
 .content-body .button {
   text-decoration: none;
+}
+
+.first-contact {
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+  padding: 38px 0;
+}
+
+.first-contact-heading {
+  max-width: 620px;
+  margin-bottom: 28px;
+}
+
+.first-contact-heading h2 {
+  margin: 0;
+  font-size: clamp(30px, 3vw, 42px);
+  line-height: 1.1;
+}
+
+.first-contact-list {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.first-contact-list li {
+  display: grid;
+  grid-template-columns: 42px minmax(0, 1fr);
+  gap: 16px;
+  align-items: start;
+  border: 1px solid var(--border);
+  background: rgba(255, 253, 248, 0.62);
+  padding: 20px;
+}
+
+.first-contact-list span {
+  color: var(--accent);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+}
+
+.first-contact-list p {
+  margin: 0;
+  color: var(--muted);
 }
 
 .content-body .kg-width-wide {
@@ -806,7 +855,8 @@ h3 {
   .service-grid,
   .article-grid,
   .page-list ul,
-  .service-list article {
+  .service-list article,
+  .first-contact-list {
     grid-template-columns: 1fr;
   }
 
