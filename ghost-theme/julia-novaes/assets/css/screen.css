@@ -171,6 +171,22 @@ h3 {
   background: var(--accent-hover);
 }
 
+.header-button {
+  min-height: 40px;
+  border-color: rgba(63, 90, 74, 0.34);
+  background: transparent;
+  color: var(--accent-dark);
+  padding-inline: 20px;
+  font-size: 11px;
+  letter-spacing: 0.04em;
+}
+
+.header-button:hover {
+  border-color: var(--accent);
+  background: transparent;
+  color: var(--accent);
+}
+
 .hero {
   padding: 78px 0 108px;
 }
@@ -839,7 +855,7 @@ h3 {
   right: 24px;
   bottom: 24px;
   z-index: 20;
-  display: inline-flex;
+  display: none;
   gap: 12px;
   align-items: center;
   border: 1px solid rgba(255, 253, 248, 0.38);
@@ -1052,9 +1068,20 @@ h3 {
   }
 
   .whatsapp-float {
+    display: inline-grid;
     right: 14px;
     bottom: 14px;
-    padding: 10px;
+    width: 48px;
+    height: 48px;
+    place-items: center;
+    padding: 0;
+  }
+
+  .whatsapp-float-icon {
+    width: 34px;
+    height: 34px;
+    background: transparent;
+    font-size: 18px;
   }
 
   .whatsapp-float-text {
