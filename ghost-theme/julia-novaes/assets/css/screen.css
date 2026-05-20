@@ -140,9 +140,9 @@ h3 {
 
 .site-nav {
   display: flex;
-  gap: 30px;
+  gap: clamp(16px, 2vw, 28px);
   color: var(--text);
-  font-size: 14px;
+  font-size: 13px;
   font-weight: 400;
   letter-spacing: 0;
 }
