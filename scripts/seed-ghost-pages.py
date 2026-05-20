@@ -469,7 +469,7 @@ PAGES = [
         "image": "/content/images/2026/05/post-psicoterapia.png",
         "html": """
 <section class="page-panel page-panel-intro">
-  <p>Um canal institucional para psiquiatras, médicos particulares, advogados de família, consultores de carreira, profissionais e instituições que atuam com cuidado individualizado em saúde, família, carreira e bem-estar e desejam conhecer o trabalho clínico de Julia Novaes e realizar encaminhamentos responsáveis.</p>
+  <p>Um canal para profissionais que desejam conhecer o trabalho clínico de Julia Novaes e realizar encaminhamentos responsáveis.</p>
 </section>
 <section class="page-split">
   <div>
@@ -479,6 +479,15 @@ PAGES = [
   <div>
     <p>Julia Novaes é psicóloga clínica, CRP 05/35722, com atuação voltada ao atendimento de adultos e casais.</p>
     <p>Seu trabalho se orienta por uma escuta clínica cuidadosa, considerando a singularidade de cada história, seus vínculos, escolhas e modos de existir.</p>
+  </div>
+</section>
+<section class="page-split">
+  <div>
+    <p class="kicker">Destinação</p>
+    <h2>Para quem esta página é destinada</h2>
+  </div>
+  <div>
+    <p>Esta página é voltada a profissionais e instituições que atuam com cuidado individualizado em saúde, família, carreira e bem-estar, e que desejam conhecer melhor o trabalho clínico de Julia Novaes para possíveis encaminhamentos responsáveis.</p>
   </div>
 </section>
 <section class="page-list">
@@ -499,11 +508,11 @@ PAGES = [
   </div>
   <div>
     <p>Profissionais que desejam realizar um encaminhamento podem orientar a pessoa a entrar em contato diretamente pelo WhatsApp profissional ou pelo formulário do site.</p>
-    <p>O primeiro contato é destinado ao envio de informações sobre disponibilidade, formato dos atendimentos e funcionamento do processo.</p>
+    <p>O primeiro contato é destinado ao envio de informações sobre disponibilidade, formato dos atendimentos, valores e funcionamento do processo.</p>
   </div>
 </section>
 <section class="page-panel">
-  <p><strong>Observação ética:</strong> os encaminhamentos são realizados de forma ética e responsável, sem qualquer comissão, contrapartida financeira ou promessa de vaga. A indicação deve ocorrer apenas quando fizer sentido clínico e profissional para a pessoa encaminhada.</p>
+  <p><strong>Observação ética:</strong> os encaminhamentos são realizados de forma ética e responsável, sem comissão, contrapartida financeira ou promessa de vaga. A indicação deve ocorrer apenas quando fizer sentido clínico e profissional para a pessoa encaminhada.</p>
 </section>
 <section class="page-cta">
   <div>
