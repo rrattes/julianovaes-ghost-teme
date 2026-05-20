@@ -149,17 +149,17 @@ h3 {
 
 .button {
   display: inline-flex;
-  min-height: 46px;
+  min-height: 48px;
   align-items: center;
   justify-content: center;
   border: 1px solid transparent;
   border-radius: 999px;
   background: var(--accent);
   color: #fff;
-  padding: 0 26px;
+  padding: 0 28px;
   font-size: 12px;
-  font-weight: 700;
-  letter-spacing: 0.06em;
+  font-weight: 600;
+  letter-spacing: 0.045em;
   text-transform: uppercase;
 }
 
@@ -168,13 +168,13 @@ h3 {
 }
 
 .hero {
-  padding: 34px 0 64px;
+  padding: 46px 0 76px;
 }
 
 .hero-grid {
   display: grid;
   grid-template-columns: minmax(420px, 1fr) minmax(360px, 0.72fr);
-  gap: 58px;
+  gap: clamp(48px, 5.8vw, 76px);
   align-items: center;
 }
 
@@ -215,9 +215,9 @@ h3 {
 .actions {
   display: flex;
   flex-wrap: wrap;
-  gap: 18px;
+  gap: 16px 20px;
   align-items: center;
-  margin-top: 34px;
+  margin-top: 38px;
 }
 
 .text-link,
@@ -247,7 +247,7 @@ h3 {
 }
 
 .section {
-  padding: 76px 0;
+  padding: 88px 0;
 }
 
 .services-section {
@@ -260,7 +260,7 @@ h3 {
 
 .section-title {
   max-width: 690px;
-  margin: 0 auto 32px;
+  margin: 0 auto 42px;
   text-align: center;
 }
 
@@ -287,14 +287,14 @@ h3 {
 .article-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
+  gap: 24px;
 }
 
 .service-card {
-  min-height: 260px;
+  min-height: 282px;
   border: 1px solid var(--border);
   background: rgba(255, 253, 248, 0.76);
-  padding: 32px;
+  padding: 36px;
 }
 
 .service-card h3 {
@@ -312,7 +312,7 @@ h3 {
 }
 
 .service-card a {
-  margin-top: 22px;
+  margin-top: 26px;
 }
 
 .about-preview {
@@ -332,9 +332,9 @@ h3 {
 .about-content {
   display: grid;
   grid-template-columns: minmax(300px, 1fr) 280px;
-  gap: 48px;
+  gap: clamp(44px, 5vw, 68px);
   align-items: center;
-  padding: 56px min(5.5vw, 72px);
+  padding: 68px min(5.5vw, 76px);
 }
 
 .about-content p {
@@ -352,7 +352,7 @@ h3 {
 .cta-band {
   background: var(--accent);
   color: #fff;
-  padding: 36px 0;
+  padding: 44px 0;
 }
 
 .cta-inner {
@@ -387,7 +387,7 @@ h3 {
 .article-section {
   display: grid;
   grid-template-columns: 280px 1fr;
-  gap: 58px;
+  gap: clamp(54px, 6vw, 76px);
 }
 
 .article-card img,
@@ -409,7 +409,7 @@ h3 {
 }
 
 .content-page {
-  padding: 84px 0;
+  padding: 96px 0;
 }
 
 .post-page {
@@ -488,7 +488,7 @@ h3 {
 }
 
 .content-header {
-  margin-bottom: 40px;
+  margin-bottom: 48px;
 }
 
 .content-body {
@@ -539,13 +539,13 @@ h3 {
 .contact-grid,
 .page-cta,
 .first-contact {
-  margin: 42px 0;
+  margin: 52px 0;
 }
 
 .page-panel {
   border-left: 1px solid var(--accent);
   background: rgba(255, 253, 248, 0.58);
-  padding: 28px 32px;
+  padding: 34px 38px;
 }
 
 .page-panel-intro {
@@ -557,20 +557,20 @@ h3 {
 .page-cta {
   display: grid;
   grid-template-columns: minmax(220px, 0.72fr) minmax(0, 1fr);
-  gap: 42px;
+  gap: clamp(42px, 5vw, 64px);
   align-items: start;
 }
 
 .page-list {
   border-top: 1px solid var(--border);
-  padding-top: 36px;
+  padding-top: 44px;
 }
 
 .page-list ul {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 14px 22px;
-  margin: 24px 0 0;
+  gap: 18px 22px;
+  margin: 30px 0 0;
   padding: 0;
   list-style: none;
 }
@@ -578,21 +578,21 @@ h3 {
 .page-list li {
   border: 1px solid var(--border);
   background: rgba(255, 253, 248, 0.72);
-  padding: 18px;
+  padding: 20px;
 }
 
 .service-list {
   display: grid;
-  gap: 18px;
+  gap: 22px;
 }
 
 .service-list article {
   display: grid;
   grid-template-columns: 54px minmax(220px, 0.54fr) 1fr;
-  gap: 24px;
+  gap: 28px;
   align-items: start;
   border-top: 1px solid var(--border);
-  padding: 28px 0;
+  padding: 34px 0;
 }
 
 .service-list span {
@@ -611,7 +611,7 @@ h3 {
 
 .contact-card {
   background: var(--surface-soft);
-  padding: 34px;
+  padding: 40px;
 }
 
 .contact-card h2 {
@@ -625,19 +625,19 @@ h3 {
 
 .contact-details {
   display: grid;
-  gap: 16px;
+  gap: 18px;
 }
 
 .contact-details article {
   border: 1px solid var(--border);
   background: rgba(255, 253, 248, 0.7);
-  padding: 22px;
+  padding: 26px;
 }
 
 .page-cta {
   align-items: center;
   border-top: 1px solid var(--border);
-  padding-top: 36px;
+  padding-top: 44px;
 }
 
 .page-cta .button {
@@ -652,7 +652,7 @@ h3 {
 .first-contact {
   border-top: 1px solid var(--border);
   border-bottom: 1px solid var(--border);
-  padding: 38px 0;
+  padding: 46px 0;
 }
 
 .first-contact-heading {
@@ -669,7 +669,7 @@ h3 {
 .first-contact-list {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 14px;
+  gap: 18px;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -682,7 +682,7 @@ h3 {
   align-items: start;
   border: 1px solid var(--border);
   background: rgba(255, 253, 248, 0.62);
-  padding: 20px;
+  padding: 22px;
 }
 
 .first-contact-list span {
@@ -840,6 +840,19 @@ h3 {
     max-width: 560px;
   }
 
+  .hero {
+    padding: 38px 0 62px;
+  }
+
+  .section,
+  .content-page {
+    padding: 68px 0;
+  }
+
+  .section-title {
+    margin-bottom: 34px;
+  }
+
   .post-hero {
     padding: 48px 0 52px;
   }
@@ -866,8 +879,20 @@ h3 {
 }
 
 @media (max-width: 560px) {
+  body {
+    font-size: 16px;
+  }
+
   .hero h1 {
     font-size: 38px;
+  }
+
+  .hero {
+    padding: 32px 0 54px;
+  }
+
+  .lead {
+    font-size: 16px;
   }
 
   .post-hero h1 {
@@ -904,6 +929,28 @@ h3 {
   .about-content,
   .service-card {
     padding-inline: 24px;
+  }
+
+  .service-card,
+  .contact-card,
+  .contact-details article,
+  .page-list li,
+  .first-contact-list li {
+    padding: 24px;
+  }
+
+  .page-panel {
+    padding: 28px 24px;
+  }
+
+  .page-panel,
+  .page-split,
+  .page-list,
+  .service-list,
+  .contact-grid,
+  .page-cta,
+  .first-contact {
+    margin: 42px 0;
   }
 
   .whatsapp-float {
