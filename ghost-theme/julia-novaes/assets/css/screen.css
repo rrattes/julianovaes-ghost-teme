@@ -962,6 +962,22 @@ h3 {
 }
 
 @media (max-width: 940px) {
+  .site-header {
+    background: var(--header-bg);
+  }
+
+  .header-inner {
+    min-height: 68px;
+    padding-block: 10px;
+  }
+
+  .brand-logo-header {
+    width: auto;
+    max-width: min(240px, 72vw);
+    max-height: 48px;
+    object-fit: contain;
+  }
+
   .site-nav,
   .header-button {
     display: none;
@@ -1030,6 +1046,16 @@ h3 {
 @media (max-width: 560px) {
   body {
     font-size: 16px;
+  }
+
+  .header-inner {
+    min-height: 66px;
+    padding-block: 9px;
+  }
+
+  .brand-logo-header {
+    max-width: min(220px, 76vw);
+    max-height: 46px;
   }
 
   .hero h1 {
