@@ -279,42 +279,72 @@ PAGES = [
 """,
     },
     {
-        "title": "Psicoterapia de casal",
+        "title": "Terapia de casal para momentos de crise, impasse e elaboração",
         "slug": "psicoterapia-de-casal",
-        "excerpt": "Um espaço de cuidado para o casal refletir sobre comunicação, vínculos, conflitos e possibilidades.",
-        "meta_title": "Terapia de casal | Julia Novaes",
-        "meta_description": "Terapia de casal para compreender conflitos, comunicação, afastamentos, escolhas e possibilidades de elaboração na relação.",
+        "excerpt": "Um espaço clínico para casais que desejam compreender conflitos, silêncios, afastamentos e possibilidades de reconstrução ou separação elaborada.",
+        "meta_title": "Terapia de casal para crise e elaboração | Julia Novaes",
+        "meta_description": "Um espaço clínico para casais que desejam compreender conflitos, silêncios, afastamentos e possibilidades de reconstrução ou separação elaborada.",
         "image": "/content/images/2026/05/post-casamentos.png",
         "html": """
 <section class="page-panel page-panel-intro">
-  <p>A psicoterapia de casal oferece um espaço de escuta para que duas pessoas possam compreender como se relacionam, como se comunicam e que sentidos sustentam seus conflitos e escolhas.</p>
-  <p>O objetivo não é apontar culpados, mas favorecer um diálogo mais cuidadoso, consciente e responsável sobre a relação.</p>
+  <p>A terapia de casal é um espaço de escuta da relação. Ela pode ser buscada quando o casal percebe que as conversas se repetem, os conflitos se intensificam ou o silêncio começa a ocupar um lugar importante no vínculo.</p>
 </section>
 <section class="page-split">
   <div>
-    <p class="kicker">Relação e vínculo</p>
-    <h2>Escutar o casal sem perder a singularidade de cada pessoa</h2>
+    <p class="kicker">Quando procurar?</p>
+    <h2>Quando a crise nem sempre aparece como briga</h2>
   </div>
   <div>
-    <p>O processo pode ajudar casais que atravessam crises, dificuldades de comunicação, distanciamento, decisões importantes ou repetições que fragilizam o vínculo.</p>
-    <p>A terapia cria condições para que o casal possa falar e ouvir de outro modo, reconhecendo impasses e possibilidades.</p>
+    <p>Nem toda crise aparece como briga. Algumas relações adoecem no afastamento, na dificuldade de conversar, na sensação de solidão a dois ou na repetição de temas que nunca encontram elaboração.</p>
+    <p>A terapia de casal pode ajudar o casal a olhar para a forma como tem se relacionado, para os impasses que se repetem e para o que ainda pode ser construído ou compreendido.</p>
   </div>
 </section>
-<section class="page-list">
-  <h2>Temas frequentes</h2>
-  <ul>
-    <li>Comunicação difícil e conflitos recorrentes.</li>
-    <li>Crises, separação, reaproximação ou transições.</li>
-    <li>Expectativas, frustrações e combinados da vida a dois.</li>
-    <li>Construção de escolhas mais conscientes sobre a relação.</li>
-  </ul>
+<section class="page-split">
+  <div>
+    <p class="kicker">Trabalho clínico</p>
+    <h2>Terapia de casal não é tribunal</h2>
+  </div>
+  <div>
+    <p>A terapia de casal não tem como objetivo apontar culpados ou decidir quem está certo.</p>
+    <p>O trabalho clínico busca compreender a dinâmica do vínculo, os modos de comunicação, as expectativas, os ressentimentos e as possibilidades reais daquele encontro.</p>
+  </div>
+</section>
+<section class="page-split">
+  <div>
+    <p class="kicker">Relação</p>
+    <h2>Conflitos, silêncios e afastamentos</h2>
+  </div>
+  <div>
+    <p>Muitas vezes, o sofrimento do casal não está apenas no tema das discussões, mas na forma como cada conversa acontece.</p>
+    <p>Um fala e o outro se defende. Um se aproxima e o outro se fecha. Um pede cuidado e o outro escuta cobrança. A terapia oferece um espaço para observar essas repetições com mais cuidado.</p>
+  </div>
+</section>
+<section class="page-split">
+  <div>
+    <p class="kicker">Possibilidades</p>
+    <h2>Continuidade, reconstrução ou separação elaborada</h2>
+  </div>
+  <div>
+    <p>Buscar terapia de casal não significa, necessariamente, permanecer junto a qualquer custo.</p>
+    <p>Em alguns casos, o processo favorece reconstruções possíveis. Em outros, ajuda o casal a compreender os limites da relação e a atravessar uma separação com mais clareza e responsabilidade.</p>
+  </div>
+</section>
+<section class="page-split">
+  <div>
+    <p class="kicker">Primeiro contato</p>
+    <h2>Como funciona o primeiro contato</h2>
+  </div>
+  <div>
+    <p>O primeiro contato pode ser feito pelo WhatsApp profissional. A partir dele, são enviadas informações sobre disponibilidade de agenda, valores, formato dos atendimentos e funcionamento do processo.</p>
+    <p>Os atendimentos são particulares e realizados em horário previamente reservado.</p>
+  </div>
 </section>
 <section class="page-cta">
   <div>
     <p class="kicker">Disponibilidade</p>
-    <h2>Quer conversar sobre a terapia de casal?</h2>
+    <h2>Um primeiro contato reservado para conversar sobre possibilidades de atendimento</h2>
   </div>
-  <a class="button" href="https://wa.me/5521999988956?text=Ol%C3%A1%2C%20Julia.%20Gostaria%20de%20solicitar%20disponibilidade%20para%20psicoterapia%20de%20casal.">Solicitar disponibilidade</a>
+  <a class="button" href="https://wa.me/5521999988956?text=Ol%C3%A1%2C%20Julia.%20Gostaria%20de%20solicitar%20disponibilidade%20para%20terapia%20de%20casal.">Solicitar disponibilidade de agenda</a>
 </section>
 """,
     },
