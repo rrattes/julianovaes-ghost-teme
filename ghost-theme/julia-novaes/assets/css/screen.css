@@ -279,8 +279,9 @@ h3 {
   border-top: 1px solid rgba(222, 210, 195, 0.64);
   border-bottom: 1px solid rgba(222, 210, 195, 0.76);
   background:
-    linear-gradient(180deg, rgba(255, 253, 248, 0.74), rgba(239, 230, 218, 0.58)),
-    var(--surface-soft);
+    linear-gradient(180deg, rgba(247, 242, 234, 0.96), rgba(239, 230, 218, 0.74)),
+    var(--background);
+  padding: 118px 0;
 }
 
 .section-title {
@@ -319,7 +320,7 @@ h3 {
 .article-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 28px;
+  gap: 30px;
 }
 
 .clinical-readings {
@@ -335,31 +336,32 @@ h3 {
 
 .service-card {
   position: relative;
-  min-height: 300px;
-  border: 1px solid rgba(222, 210, 195, 0.92);
-  background: rgba(255, 253, 248, 0.82);
-  padding: 50px 40px 40px;
+  display: flex;
+  min-height: 360px;
+  flex-direction: column;
+  border: 1px solid rgba(222, 210, 195, 0.96);
+  background: rgba(255, 253, 248, 0.9);
+  padding: 48px 42px 40px;
 }
 
-.service-card::before {
-  display: block;
-  margin-bottom: 28px;
+.service-card:nth-child(2) {
+  border-color: rgba(200, 170, 122, 0.72);
+  background:
+    linear-gradient(180deg, rgba(255, 253, 248, 0.96), rgba(255, 253, 248, 0.82)),
+    var(--surface);
+}
+
+.service-marker {
+  display: inline-flex;
+  width: fit-content;
+  margin-bottom: 32px;
+  border-bottom: 1px solid rgba(166, 111, 91, 0.42);
   color: var(--terracotta);
   font-size: 12px;
   font-weight: 700;
-  letter-spacing: 0.12em;
-}
-
-.service-card:nth-child(1)::before {
-  content: "01";
-}
-
-.service-card:nth-child(2)::before {
-  content: "02";
-}
-
-.service-card:nth-child(3)::before {
-  content: "03";
+  letter-spacing: 0.13em;
+  line-height: 1.6;
+  text-transform: uppercase;
 }
 
 .service-card h3 {
@@ -377,7 +379,9 @@ h3 {
 }
 
 .service-card a {
-  margin-top: 30px;
+  margin-top: auto;
+  padding-top: 34px;
+  align-self: flex-start;
 }
 
 .clinical-authority {
@@ -1231,7 +1235,7 @@ h3 {
     padding-top: 34px;
   }
 
-  .service-card::before {
+  .service-marker {
     margin-bottom: 20px;
   }
 
