@@ -1,0 +1,311 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Encaminhamento profissional | Julia Novaes</title>
+  <style>
+    :root {
+      --background: #f7f2ea;
+      --surface: #fffdf8;
+      --surface-soft: #efe6da;
+      --text: #2f2a25;
+      --muted: #6e6258;
+      --border: #ded2c3;
+      --green: #3f5a4a;
+      --green-dark: #263b31;
+      --terracotta: #a66f5b;
+      --champagne: #c8aa7a;
+    }
+
+    @page {
+      size: A4;
+      margin: 14mm;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      background: var(--background);
+      color: var(--text);
+      font-family: "Source Sans 3", "Segoe UI", Arial, sans-serif;
+      font-size: 10.8pt;
+      line-height: 1.48;
+      -webkit-font-smoothing: antialiased;
+      text-rendering: optimizeLegibility;
+    }
+
+    .sheet {
+      width: 210mm;
+      min-height: 297mm;
+      margin: 0 auto;
+      padding: 18mm;
+      background:
+        linear-gradient(90deg, rgba(200, 170, 122, 0.18), transparent 42%),
+        var(--surface);
+      border: 1px solid var(--border);
+    }
+
+    .topline {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 18mm;
+      padding-bottom: 10mm;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .eyebrow {
+      margin: 0 0 5mm;
+      color: var(--terracotta);
+      font-size: 8pt;
+      font-weight: 700;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+    }
+
+    h1,
+    h2 {
+      margin: 0;
+      font-family: Georgia, "Times New Roman", serif;
+      font-weight: 400;
+      letter-spacing: 0;
+    }
+
+    h1 {
+      color: var(--text);
+      font-size: 31pt;
+      line-height: 0.96;
+    }
+
+    .credential {
+      margin: 3mm 0 0;
+      color: var(--green);
+      font-size: 10pt;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    .summary {
+      max-width: 76mm;
+      margin: 0;
+      color: var(--muted);
+      font-size: 11pt;
+    }
+
+    .content {
+      display: grid;
+      grid-template-columns: 1.02fr 0.98fr;
+      gap: 9mm;
+      margin-top: 11mm;
+    }
+
+    .panel {
+      padding: 7mm;
+      border: 1px solid rgba(222, 210, 195, 0.92);
+      background: rgba(255, 253, 248, 0.72);
+    }
+
+    .panel.soft {
+      background: var(--surface-soft);
+    }
+
+    .panel.dark {
+      grid-column: 1 / -1;
+      display: grid;
+      grid-template-columns: 1fr 1.15fr;
+      gap: 10mm;
+      align-items: center;
+      background: var(--green-dark);
+      border-color: var(--green-dark);
+      color: var(--surface);
+    }
+
+    .panel.dark .eyebrow {
+      color: var(--champagne);
+    }
+
+    .panel.dark p,
+    .panel.dark a {
+      color: rgba(255, 253, 248, 0.84);
+    }
+
+    h2 {
+      margin-bottom: 4mm;
+      color: var(--text);
+      font-size: 17pt;
+      line-height: 1.08;
+    }
+
+    .panel.dark h2 {
+      color: var(--surface);
+    }
+
+    p {
+      margin: 0;
+    }
+
+    p + p {
+      margin-top: 3.4mm;
+    }
+
+    ul {
+      display: grid;
+      gap: 2.4mm;
+      margin: 0;
+      padding-left: 4.2mm;
+    }
+
+    li::marker {
+      color: var(--champagne);
+    }
+
+    .note {
+      grid-column: 1 / -1;
+      padding-left: 7mm;
+      border-left: 1px solid var(--champagne);
+      color: var(--muted);
+    }
+
+    .contact-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 5mm;
+    }
+
+    .contact-item {
+      padding-top: 4mm;
+      border-top: 1px solid rgba(255, 253, 248, 0.26);
+    }
+
+    .label {
+      display: block;
+      margin-bottom: 1.5mm;
+      color: var(--champagne);
+      font-size: 7.5pt;
+      font-weight: 700;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .footer {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 8mm;
+      margin-top: 10mm;
+      padding-top: 6mm;
+      border-top: 1px solid var(--border);
+      color: var(--muted);
+      font-size: 8.2pt;
+    }
+
+    .footer strong {
+      color: var(--green);
+      font-weight: 700;
+    }
+
+    @media screen {
+      body {
+        padding: 18px;
+      }
+
+      .sheet {
+        box-shadow: 0 24px 70px rgba(47, 42, 37, 0.12);
+      }
+    }
+
+    @media print {
+      body {
+        background: #fff;
+      }
+
+      .sheet {
+        width: auto;
+        min-height: auto;
+        margin: 0;
+        padding: 0;
+        border: 0;
+        box-shadow: none;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="sheet">
+    <header class="topline">
+      <div>
+        <p class="eyebrow">Encaminhamento profissional</p>
+        <h1>Julia Novaes</h1>
+        <p class="credential">Psicóloga clínica — CRP 05/35722</p>
+      </div>
+      <p class="summary">Atendimento psicológico para adultos e casais, com escuta clínica cuidadosa, em processos de sofrimento emocional, conflitos afetivos, transições de vida e elaboração de vínculos e escolhas.</p>
+    </header>
+
+    <section class="content">
+      <article class="panel">
+        <p class="eyebrow">Atuação clínica</p>
+        <h2>Escuta cuidadosa da singularidade de cada história</h2>
+        <p>Julia Novaes realiza atendimentos clínicos para adultos e casais. Seu trabalho se orienta por uma escuta cuidadosa da singularidade de cada história, considerando os modos como a pessoa se relaciona consigo, com os outros, com suas escolhas e com as questões que atravessam sua vida.</p>
+        <p>Os atendimentos são particulares e podem acontecer em formato online e/ou presencial no Rio de Janeiro, conforme disponibilidade de agenda e formato combinado no primeiro contato.</p>
+      </article>
+
+      <article class="panel soft">
+        <p class="eyebrow">Demandas acompanhadas</p>
+        <h2>Temas frequentes no trabalho clínico</h2>
+        <ul>
+          <li>Ansiedade e sofrimento emocional.</li>
+          <li>Autocobrança, sobrecarga e dificuldade de reconhecer limites.</li>
+          <li>Conflitos afetivos e conjugais.</li>
+          <li>Separações e reorganizações de vida.</li>
+          <li>Transições pessoais, familiares ou profissionais.</li>
+          <li>Questões relacionadas a vínculos, escolhas e projetos de vida.</li>
+        </ul>
+      </article>
+
+      <article class="panel">
+        <p class="eyebrow">Encaminhamentos</p>
+        <h2>Como encaminhar</h2>
+        <p>Profissionais que desejam realizar um encaminhamento podem orientar a pessoa a entrar em contato diretamente pelo WhatsApp profissional ou pelo formulário do site.</p>
+        <p>O primeiro contato é destinado ao envio de informações sobre disponibilidade, formato dos atendimentos, valores e funcionamento do processo.</p>
+      </article>
+
+      <article class="panel">
+        <p class="eyebrow">Observação ética</p>
+        <h2>Indicação responsável</h2>
+        <p>Os encaminhamentos são realizados de forma ética e responsável, sem comissão, contrapartida financeira ou promessa de vaga.</p>
+        <p>A indicação deve ocorrer apenas quando fizer sentido clínico e profissional para a pessoa encaminhada.</p>
+      </article>
+
+      <section class="panel dark" aria-label="Contato profissional">
+        <div>
+          <p class="eyebrow">Contato</p>
+          <h2>Canal profissional</h2>
+        </div>
+        <div class="contact-grid">
+          <p class="contact-item"><span class="label">Site</span><a href="https://www.julianovaes.com.br">www.julianovaes.com.br</a></p>
+          <p class="contact-item"><span class="label">WhatsApp profissional</span><a href="https://wa.me/5521999988956">(21) 99998-8956</a></p>
+          <p class="contact-item"><span class="label">Página institucional</span><a href="https://www.julianovaes.com.br/encaminhamentos-profissionais/">/encaminhamentos-profissionais/</a></p>
+          <p class="contact-item"><span class="label">Formato</span>Atendimento particular, online e/ou presencial.</p>
+        </div>
+      </section>
+
+      <p class="note">Este material tem caráter institucional e informativo. Ele não substitui avaliação clínica, não garante vaga e não estabelece qualquer relação comercial entre profissionais.</p>
+    </section>
+
+    <footer class="footer">
+      <span><strong>Julia Novaes</strong> — Psicóloga clínica, CRP 05/35722</span>
+      <span>Material institucional para encaminhamentos responsáveis</span>
+    </footer>
+  </main>
+</body>
+</html>
