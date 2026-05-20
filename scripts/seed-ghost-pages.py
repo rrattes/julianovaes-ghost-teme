@@ -276,6 +276,58 @@ PAGES = [
 """,
     },
     {
+        "title": "Encaminhamentos profissionais",
+        "slug": "encaminhamentos-profissionais",
+        "excerpt": "Um canal para profissionais que desejam conhecer o trabalho clínico de Julia Novaes e realizar encaminhamentos responsáveis.",
+        "image": "/content/images/2026/05/post-psicoterapia.png",
+        "html": """
+<section class="page-panel page-panel-intro">
+  <p>Um canal institucional para psiquiatras, médicos particulares, advogados de família, consultores de carreira e clínicas boutique que desejam conhecer o trabalho clínico de Julia Novaes e realizar encaminhamentos responsáveis.</p>
+</section>
+<section class="page-split">
+  <div>
+    <p class="kicker">Atuação clínica</p>
+    <h2>Sobre a atuação clínica</h2>
+  </div>
+  <div>
+    <p>Julia Novaes é psicóloga clínica, CRP 05/35722, com atuação voltada ao atendimento de adultos e casais.</p>
+    <p>Seu trabalho se orienta por uma escuta clínica cuidadosa, considerando a singularidade de cada história, seus vínculos, escolhas e modos de existir.</p>
+  </div>
+</section>
+<section class="page-list">
+  <h2>Demandas frequentemente acompanhadas</h2>
+  <ul>
+    <li>Ansiedade e sofrimento emocional.</li>
+    <li>Conflitos afetivos e conjugais.</li>
+    <li>Separações e reorganizações de vida.</li>
+    <li>Transições pessoais, familiares ou profissionais.</li>
+    <li>Autocobrança e alta exigência emocional.</li>
+    <li>Questões relacionadas a vínculos, escolhas e projetos de vida.</li>
+  </ul>
+</section>
+<section class="page-split">
+  <div>
+    <p class="kicker">Encaminhamento</p>
+    <h2>Como encaminhar</h2>
+  </div>
+  <div>
+    <p>Profissionais que desejam realizar um encaminhamento podem orientar a pessoa a entrar em contato diretamente pelo WhatsApp profissional ou pelo formulário do site.</p>
+    <p>O primeiro contato é destinado ao envio de informações sobre disponibilidade, formato dos atendimentos e funcionamento do processo.</p>
+  </div>
+</section>
+<section class="page-panel">
+  <p><strong>Observação ética:</strong> os encaminhamentos são realizados de forma ética e responsável, sem qualquer comissão, contrapartida financeira ou promessa de vaga. A indicação deve ocorrer apenas quando fizer sentido clínico e profissional para a pessoa encaminhada.</p>
+</section>
+<section class="page-cta">
+  <div>
+    <p class="kicker">Contato profissional</p>
+    <h2>Para encaminhamentos e informações institucionais</h2>
+  </div>
+  <a class="button" href="https://wa.me/5521999988956?text=Ol%C3%A1%2C%20Julia.%20Gostaria%20de%20falar%20sobre%20um%20encaminhamento%20profissional.">Entrar em contato</a>
+</section>
+""",
+    },
+    {
         "title": "Contato",
         "slug": "contato",
         "excerpt": "Entre em contato para conversar sobre disponibilidade, formato de atendimento e próximos passos.",
