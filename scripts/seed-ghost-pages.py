@@ -173,6 +173,59 @@ PAGES = [
 """,
     },
     {
+        "title": "Psicoterapia particular online",
+        "slug": "psicoterapia-particular-online",
+        "excerpt": "Atendimento psicológico particular para adultos e casais, com escuta clínica, discrição e horário reservado.",
+        "meta_title": "Psicoterapia particular online | Julia Novaes",
+        "meta_description": "Atendimento psicológico particular online para adultos e casais, com escuta clínica, discrição e horário reservado.",
+        "image": "/content/images/2026/05/post-psicoterapia.png",
+        "html": """
+<section class="page-panel page-panel-intro">
+  <p>Um espaço clínico reservado para adultos e casais que buscam escuta, cuidado e elaboração em momentos de crise, mudança ou sofrimento emocional.</p>
+</section>
+<section class="page-split">
+  <div>
+    <p class="kicker">Atendimento particular</p>
+    <h2>Para quem é este atendimento?</h2>
+  </div>
+  <div>
+    <p>A psicoterapia particular online pode ser uma possibilidade para pessoas que desejam iniciar ou retomar um processo terapêutico com discrição, continuidade e horário reservado.</p>
+    <p>O atendimento é voltado a adultos e casais que atravessam questões emocionais, relacionais ou existenciais e buscam um espaço de escuta clínica cuidadosa.</p>
+  </div>
+</section>
+<section class="page-list">
+  <h2>O que pode ser trabalhado em psicoterapia?</h2>
+  <ul>
+    <li>Ansiedade e sofrimento emocional.</li>
+    <li>Autocobrança e sobrecarga.</li>
+    <li>Conflitos afetivos e conjugais.</li>
+    <li>Separações e reorganizações de vida.</li>
+    <li>Escolhas importantes.</li>
+    <li>Transições pessoais, familiares ou profissionais.</li>
+    <li>Dificuldade de reconhecer limites.</li>
+    <li>Questões relacionadas à história, aos vínculos e aos modos de viver.</li>
+  </ul>
+</section>
+<section class="page-split">
+  <div>
+    <p class="kicker">Online</p>
+    <h2>Atendimento online com discrição e continuidade</h2>
+  </div>
+  <div>
+    <p>O formato online permite que o processo psicoterapêutico aconteça com regularidade, mesmo em rotinas mais complexas.</p>
+    <p>Para isso, é importante que a pessoa esteja em um ambiente privado, com condições de fala e escuta, preservando o sigilo e a qualidade do encontro clínico.</p>
+  </div>
+</section>
+<section class="page-cta">
+  <div>
+    <p class="kicker">Disponibilidade</p>
+    <h2>Um primeiro contato reservado para compreender possibilidades de atendimento</h2>
+  </div>
+  <a class="button" href="https://wa.me/5521999988956?text=Ol%C3%A1%2C%20Julia.%20Gostaria%20de%20solicitar%20disponibilidade%20para%20psicoterapia%20particular%20online.">Solicitar disponibilidade de agenda</a>
+</section>
+""",
+    },
+    {
         "title": "Psicoterapia para pessoas em autocobrança e sobrecarga emocional",
         "slug": "psicoterapia-alta-exigencia-emocional",
         "excerpt": "Para quem sustenta muitas responsabilidades, decisões e relações — e percebe que seguir funcionando já não significa estar bem.",

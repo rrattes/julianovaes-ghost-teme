@@ -577,6 +577,11 @@ h3 {
   margin-bottom: 48px;
 }
 
+.content-header-cta {
+  margin-top: 28px;
+  text-decoration: none;
+}
+
 .content-body {
   font-size: 18px;
 }
