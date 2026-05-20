@@ -38,6 +38,8 @@ PAGES = [
         "title": "Sobre mim",
         "slug": "sobre",
         "excerpt": "Julia Novaes, psicóloga clínica CRP 05/35722, com atuação clínica desde 2007 e escuta orientada pela abordagem fenomenológico-existencial.",
+        "meta_title": "Sobre Julia Novaes | Psicóloga clínica no Rio de Janeiro",
+        "meta_description": "Conheça a trajetória de Julia Novaes, psicóloga clínica CRP 05/35722, com atuação desde 2007 em psicoterapia para adultos e casais.",
         "image": "/content/images/2026/05/post-psicoterapia.png",
         "html": """
 <section class="page-panel page-panel-intro">
@@ -97,6 +99,8 @@ PAGES = [
         "title": "Atendimentos",
         "slug": "atendimentos",
         "excerpt": "Cuidado psicológico para diferentes momentos, necessidades e formas de relação.",
+        "meta_title": "Atendimentos em psicoterapia | Julia Novaes",
+        "meta_description": "Psicoterapia para adultos e casais em temas como ansiedade, relações, escolhas, conflitos afetivos e transições importantes da vida.",
         "image": "/content/images/2026/05/post-akna.png",
         "html": """
 <section class="page-panel page-panel-intro">
@@ -132,6 +136,8 @@ PAGES = [
         "title": "Psicoterapia individual",
         "slug": "psicoterapia-individual",
         "excerpt": "Um espaço de escuta para compreender sua história, emoções, escolhas e modos de relação.",
+        "meta_title": "Psicoterapia individual para adultos | Julia Novaes",
+        "meta_description": "Psicoterapia individual para adultos que buscam elaborar ansiedade, autocobrança, relações, escolhas e transições de vida.",
         "image": "/content/images/2026/05/post-psicoterapia.png",
         "html": """
 <section class="page-panel page-panel-intro">
@@ -170,6 +176,8 @@ PAGES = [
         "title": "Psicoterapia para pessoas em alta exigência emocional",
         "slug": "psicoterapia-alta-exigencia-emocional",
         "excerpt": "Para quem sustenta muitas responsabilidades, decisões e relações — e percebe que seguir funcionando já não significa estar bem.",
+        "meta_title": "Psicoterapia para alta exigência emocional | Julia Novaes",
+        "meta_description": "Psicoterapia para pessoas em alta exigência emocional, com foco em ansiedade, autocobrança, relações e transições importantes.",
         "image": "/content/images/2026/05/post-psicoterapia.png",
         "html": """
 <section class="page-panel page-panel-intro">
@@ -221,6 +229,8 @@ PAGES = [
         "title": "Psicoterapia de casal",
         "slug": "psicoterapia-de-casal",
         "excerpt": "Um espaço de cuidado para o casal refletir sobre comunicação, vínculos, conflitos e possibilidades.",
+        "meta_title": "Terapia de casal | Julia Novaes",
+        "meta_description": "Terapia de casal para compreender conflitos, comunicação, afastamentos, escolhas e possibilidades de elaboração na relação.",
         "image": "/content/images/2026/05/post-casamentos.png",
         "html": """
 <section class="page-panel page-panel-intro">
@@ -259,6 +269,8 @@ PAGES = [
         "title": "Psicoterapia de grupo",
         "slug": "psicoterapia-de-grupo",
         "excerpt": "Um espaço terapêutico em grupo para elaborar experiências, ampliar percepções e construir pertencimento.",
+        "meta_title": "Psicoterapia de grupo | Julia Novaes",
+        "meta_description": "Psicoterapia de grupo em um espaço clínico de escuta, elaboração de experiências, vínculos e construção de pertencimento.",
         "image": "/content/images/2026/05/post-akna.png",
         "html": """
 <section class="page-panel page-panel-intro">
@@ -297,6 +309,8 @@ PAGES = [
         "title": "Encaminhamentos profissionais",
         "slug": "encaminhamentos-profissionais",
         "excerpt": "Um canal para profissionais que desejam conhecer o trabalho clínico de Julia Novaes e realizar encaminhamentos responsáveis.",
+        "meta_title": "Encaminhamentos profissionais | Julia Novaes",
+        "meta_description": "Canal para profissionais conhecerem o trabalho clínico de Julia Novaes e realizarem encaminhamentos éticos e responsáveis.",
         "image": "/content/images/2026/05/post-psicoterapia.png",
         "html": """
 <section class="page-panel page-panel-intro">
@@ -349,6 +363,8 @@ PAGES = [
         "title": "Contato",
         "slug": "contato",
         "excerpt": "Entre em contato para conversar sobre disponibilidade, formato de atendimento e próximos passos.",
+        "meta_title": "Contato | Julia Novaes Psicóloga",
+        "meta_description": "Entre em contato para informações sobre disponibilidade de agenda, psicoterapia para adultos e casais, atendimento presencial e online.",
         "image": "/content/images/2026/05/post-casamentos.png",
         "html": """
 <section class="contact-grid">
@@ -399,6 +415,8 @@ def main():
     for page in PAGES:
         timestamp = now()
         text = plain_text(page["html"])
+        meta_title = page.get("meta_title", page["title"])
+        meta_description = page.get("meta_description", page["excerpt"])
         existing = cur.execute("select id from posts where slug = ? and type = 'page'", (page["slug"],)).fetchone()
         if existing:
             page_id = existing[0]
@@ -461,6 +479,45 @@ def main():
             "insert into posts_authors (id, post_id, author_id, sort_order) values (?, ?, ?, 0)",
             (ghost_id(), page_id, author_id),
         )
+        existing_meta = cur.execute("select id from posts_meta where post_id = ?", (page_id,)).fetchone()
+        if existing_meta:
+            cur.execute(
+                """
+                update posts_meta set
+                  meta_title = ?, meta_description = ?,
+                  og_title = ?, og_description = ?,
+                  twitter_title = ?, twitter_description = ?
+                where post_id = ?
+                """,
+                (
+                    meta_title,
+                    meta_description,
+                    meta_title,
+                    meta_description,
+                    meta_title,
+                    meta_description,
+                    page_id,
+                ),
+            )
+        else:
+            cur.execute(
+                """
+                insert into posts_meta (
+                  id, post_id, meta_title, meta_description,
+                  og_title, og_description, twitter_title, twitter_description
+                ) values (?, ?, ?, ?, ?, ?, ?, ?)
+                """,
+                (
+                    ghost_id(),
+                    page_id,
+                    meta_title,
+                    meta_description,
+                    meta_title,
+                    meta_description,
+                    meta_title,
+                    meta_description,
+                ),
+            )
 
     con.commit()
     con.close()
