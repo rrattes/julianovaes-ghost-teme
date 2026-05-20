@@ -626,6 +626,7 @@ h3 {
 .page-panel,
 .page-split,
 .page-list,
+.faq-list,
 .service-list,
 .contact-grid,
 .page-cta,
@@ -670,6 +671,57 @@ h3 {
   border: 1px solid rgba(222, 210, 195, 0.9);
   background: rgba(255, 253, 248, 0.76);
   padding: 22px;
+}
+
+.faq-list {
+  display: grid;
+  gap: 14px;
+}
+
+.faq-list details {
+  border: 1px solid rgba(222, 210, 195, 0.9);
+  background: rgba(255, 253, 248, 0.72);
+  padding: 0;
+}
+
+.faq-list summary {
+  position: relative;
+  cursor: pointer;
+  padding: 24px 58px 24px 26px;
+  color: var(--text);
+  font-family: var(--gh-font-heading, "Julia Newsreader", Georgia, "Times New Roman", serif);
+  font-size: clamp(22px, 2vw, 28px);
+  line-height: 1.16;
+  list-style: none;
+}
+
+.faq-list summary::-webkit-details-marker {
+  display: none;
+}
+
+.faq-list summary::after {
+  content: "+";
+  position: absolute;
+  top: 50%;
+  right: 26px;
+  color: var(--green);
+  font-family: var(--gh-font-body, Inter, Arial, sans-serif);
+  font-size: 22px;
+  font-weight: 400;
+  transform: translateY(-50%);
+}
+
+.faq-list details[open] summary::after {
+  content: "−";
+}
+
+.faq-list p {
+  max-width: 780px;
+  margin: 0;
+  padding: 0 26px 26px;
+  color: var(--muted);
+  font-size: 17px;
+  line-height: 1.75;
 }
 
 .service-list {

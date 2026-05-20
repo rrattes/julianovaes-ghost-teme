@@ -413,6 +413,68 @@ PAGES = [
 """,
     },
     {
+        "title": "Perguntas frequentes",
+        "slug": "perguntas-frequentes",
+        "excerpt": "Informações sobre atendimento psicológico, psicoterapia online, terapia de casal, sigilo, valores e disponibilidade de agenda.",
+        "meta_title": "Perguntas frequentes | Julia Novaes",
+        "meta_description": "Informações sobre atendimento psicológico, psicoterapia online, terapia de casal, sigilo, valores e disponibilidade de agenda.",
+        "image": "/content/images/2026/05/post-psicoterapia.png",
+        "html": """
+<section class="page-panel page-panel-intro">
+  <p>Algumas dúvidas costumam aparecer antes do início de um processo psicoterapêutico. Esta página reúne informações iniciais sobre formato dos atendimentos, sigilo, frequência, valores e primeiro contato.</p>
+</section>
+<section class="faq-list" aria-label="Perguntas frequentes sobre atendimento psicológico">
+  <details open>
+    <summary>A Julia atende por convênio?</summary>
+    <p>Os atendimentos são particulares. Informações sobre valores e disponibilidade de horários são enviadas no primeiro contato profissional.</p>
+  </details>
+  <details>
+    <summary>O atendimento é online ou presencial?</summary>
+    <p>Os atendimentos podem acontecer online ou presencialmente, conforme disponibilidade de agenda e formato combinado no primeiro contato.</p>
+  </details>
+  <details>
+    <summary>Como funciona o primeiro contato?</summary>
+    <p>O primeiro contato pode ser feito pelo WhatsApp profissional ou pelo formulário do site. A partir dele, são enviadas informações sobre disponibilidade, valores, formato dos atendimentos e funcionamento do processo.</p>
+  </details>
+  <details>
+    <summary>Qual é o valor da sessão?</summary>
+    <p>Os valores são informados diretamente no primeiro contato. Essa escolha preserva um atendimento mais cuidadoso e permite apresentar as informações de acordo com o formato buscado: psicoterapia individual, terapia de casal ou outro acompanhamento disponível.</p>
+  </details>
+  <details>
+    <summary>A terapia de casal é feita com os dois juntos?</summary>
+    <p>Em geral, a terapia de casal envolve a presença dos dois parceiros no processo. A forma de condução, frequência e organização dos encontros é conversada no início do acompanhamento.</p>
+  </details>
+  <details>
+    <summary>Com que frequência acontecem as sessões?</summary>
+    <p>A frequência mais comum é semanal, mas isso pode variar de acordo com o tipo de atendimento, a disponibilidade de agenda e a avaliação clínica do processo.</p>
+  </details>
+  <details>
+    <summary>A psicoterapia tem duração definida?</summary>
+    <p>Não há uma duração única para todos os processos. A psicoterapia acompanha o tempo necessário de elaboração de cada pessoa ou casal, considerando a singularidade da história e das questões trazidas.</p>
+  </details>
+  <details>
+    <summary>Como funciona o sigilo profissional?</summary>
+    <p>O sigilo é parte fundamental do trabalho psicológico. As informações compartilhadas em atendimento são tratadas com cuidado, responsabilidade e de acordo com os princípios éticos da profissão.</p>
+  </details>
+  <details>
+    <summary>Posso iniciar psicoterapia mesmo sem estar em crise?</summary>
+    <p>Sim. A psicoterapia não precisa começar apenas em momentos de crise. Muitas pessoas procuram esse espaço para compreender melhor sua história, seus vínculos, suas escolhas e seus modos de viver.</p>
+  </details>
+  <details>
+    <summary>Como solicitar disponibilidade de agenda?</summary>
+    <p>Você pode entrar em contato pelo WhatsApp profissional ou pelo formulário do site. A disponibilidade de horários será verificada e as informações iniciais serão enviadas em seguida.</p>
+  </details>
+</section>
+<section class="page-cta">
+  <div>
+    <p class="kicker">Primeiro contato</p>
+    <h2>Para conversar sobre disponibilidade e formato de atendimento</h2>
+  </div>
+  <a class="button" href="https://wa.me/5521999988956?text=Ol%C3%A1%2C%20Julia.%20Gostaria%20de%20solicitar%20disponibilidade%20de%20agenda.">Solicitar disponibilidade de agenda</a>
+</section>
+""",
+    },
+    {
         "title": "Contato",
         "slug": "contato",
         "excerpt": "Entre em contato para conversar sobre disponibilidade, formato de atendimento e próximos passos.",
