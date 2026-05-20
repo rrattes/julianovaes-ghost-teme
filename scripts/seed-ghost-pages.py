@@ -37,31 +37,59 @@ PAGES = [
     {
         "title": "Sobre mim",
         "slug": "sobre",
-        "excerpt": "Psicóloga clínica com escuta cuidadosa, ética e abordagem fenomenológico-existencial.",
+        "excerpt": "Julia Novaes, psicóloga clínica CRP 05/35722, com atuação clínica desde 2007 e escuta orientada pela abordagem fenomenológico-existencial.",
         "image": "/content/images/2026/05/post-psicoterapia.png",
         "html": """
 <section class="page-panel page-panel-intro">
-  <p>Acredito na importância de uma escuta verdadeira e na construção de um espaço seguro para que cada pessoa possa se compreender em sua singularidade.</p>
-  <p>Minha atuação clínica parte de uma perspectiva fenomenológico-existencial, olhando para a experiência vivida, para os vínculos e para as possibilidades que podem se abrir quando uma história é acolhida com cuidado.</p>
+  <p>Julia Novaes é psicóloga clínica, CRP 05/35722, com atuação clínica desde 2007. Seu trabalho é voltado ao atendimento de adultos e casais, em um espaço de escuta cuidadosa, ética e reservado à singularidade de cada história.</p>
+  <p>A clínica é compreendida como um encontro em que relações, escolhas, sofrimentos e modos de existir podem ser olhados com tempo, presença e responsabilidade.</p>
 </section>
 <section class="page-split">
   <div>
-    <p class="kicker">Escuta clínica</p>
-    <h2>Um encontro ético, cuidadoso e singular</h2>
+    <p class="kicker">Trajetória clínica</p>
+    <h2>Uma prática construída entre consultório e saúde mental</h2>
   </div>
   <div>
-    <p>A psicoterapia não oferece respostas prontas. Ela cria um tempo de elaboração para que sentimentos, escolhas e relações possam ser vistos com mais clareza.</p>
-    <p>O trabalho acontece em uma relação de presença, respeito e investigação conjunta, considerando a história de cada pessoa e o modo como ela se relaciona consigo, com os outros e com o mundo.</p>
+    <p>Formada em Psicologia pelo Instituto Brasileiro de Medicina de Reabilitação (IBMR), Julia atua em consultório particular desde 2007.</p>
+    <p>Sua formação inclui especialização em psicologia clínica na perspectiva fenomenológico-existencial pelo IFEN e especialização em saúde mental e atenção psicossocial pela ENSP/Fiocruz.</p>
+  </div>
+</section>
+<section class="page-split">
+  <div>
+    <p class="kicker">Abordagem</p>
+    <h2>Escuta fenomenológico-existencial</h2>
+  </div>
+  <div>
+    <p>A abordagem fenomenológico-existencial orienta uma escuta atenta à experiência vivida, aos vínculos, às escolhas e às possibilidades que se apresentam em cada momento da vida.</p>
+    <p>O processo terapêutico não parte de respostas prontas ou promessas de solução. Ele oferece um espaço clínico para compreender como cada pessoa se relaciona consigo, com os outros e com as exigências que atravessam sua história.</p>
+  </div>
+</section>
+<section class="page-split">
+  <div>
+    <p class="kicker">Saúde mental</p>
+    <h2>Experiência em serviços públicos e institucionais</h2>
+  </div>
+  <div>
+    <p>Entre 2008 e 2014, Julia atuou em serviços de saúde mental no estado do Rio de Janeiro, incluindo CAPS, CAPSi, CAPSad, hospital psiquiátrico e residências terapêuticas.</p>
+    <p>Essa experiência compõe uma trajetória clínica marcada pelo cuidado com diferentes formas de sofrimento psíquico e pela atenção à complexidade das histórias de vida.</p>
   </div>
 </section>
 <section class="page-list">
-  <h2>Como esse trabalho se orienta</h2>
+  <h2>Temas frequentes no consultório</h2>
   <ul>
-    <li>Escuta atenta e sem julgamentos apressados.</li>
-    <li>Cuidado com a singularidade de cada história.</li>
-    <li>Reflexão sobre escolhas, vínculos e modos de existir.</li>
-    <li>Construção de um espaço clínico seguro e respeitoso.</li>
+    <li>Ansiedade, autocobrança e alta exigência emocional.</li>
+    <li>Conflitos afetivos, conjugais e familiares.</li>
+    <li>Separações, reorganizações de vida e transições importantes.</li>
+    <li>Dificuldades em escolhas, limites e relações.</li>
+    <li>Questões relacionadas a vínculos, projetos de vida e modos de existir.</li>
   </ul>
+</section>
+<section class="page-cta">
+  <div>
+    <p class="kicker">Primeiro contato</p>
+    <h2>Um espaço reservado para conversar sobre o que você está vivendo</h2>
+  </div>
+  <a class="button" href="https://wa.me/5521999988956?text=Ol%C3%A1%2C%20Julia.%20Gostaria%20de%20solicitar%20disponibilidade%20de%20agenda.">Solicitar disponibilidade de agenda</a>
 </section>
 """,
     },
