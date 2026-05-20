@@ -79,7 +79,7 @@ PAGES = [
 <section class="page-list">
   <h2>Temas frequentes no consultório</h2>
   <ul>
-    <li>Ansiedade, autocobrança e alta exigência emocional.</li>
+    <li>Ansiedade, autocobrança, sobrecarga emocional e dificuldade de reconhecer limites.</li>
     <li>Conflitos afetivos, conjugais e familiares.</li>
     <li>Separações, reorganizações de vida e transições importantes.</li>
     <li>Dificuldades em escolhas, limites e relações.</li>
@@ -109,18 +109,18 @@ PAGES = [
 <section class="service-list">
   <article>
     <span>01</span>
-    <h2>Psicoterapia individual</h2>
-    <p>Um espaço para compreender sua história, emoções, padrões de relação e escolhas, com cuidado para que novos caminhos possam ser construídos com mais liberdade e sentido.</p>
+    <h2>Psicoterapia individual para adultos</h2>
+    <p>Um espaço de escuta clínica para ansiedade, autocobrança, relações, escolhas e transições de vida.</p>
   </article>
   <article>
     <span>02</span>
-    <h2>Psicoterapia de casal</h2>
-    <p>Acolhimento e reflexão para o casal cuidar da comunicação, fortalecer vínculos e encontrar modos mais verdadeiros de se relacionar.</p>
+    <h2>Terapia de casal</h2>
+    <p>Um acompanhamento para casais que desejam compreender conflitos, silêncios, afastamentos e possibilidades de reconstrução ou elaboração.</p>
   </article>
   <article>
     <span>03</span>
-    <h2>Psicoterapia de grupo</h2>
-    <p>O encontro com outras histórias pode ampliar percepções, elaborar questões e construir pertencimento em um ambiente seguro.</p>
+    <h2>Psicoterapia online</h2>
+    <p>Atendimento particular e reservado para adultos que buscam continuidade de cuidado com discrição e flexibilidade.</p>
   </article>
 </section>
 <section class="page-cta">
@@ -158,8 +158,8 @@ PAGES = [
   <h2>Quando pode ajudar</h2>
   <ul>
     <li>Momentos de angústia, ansiedade ou tristeza persistente.</li>
-    <li>Dificuldades em escolhas, limites e relacoes.</li>
-    <li>Processos de mudanca, perda ou transicao de vida.</li>
+    <li>Dificuldades em escolhas, limites e relações.</li>
+    <li>Processos de mudança, perda ou transição de vida.</li>
     <li>Desejo de compreender melhor a própria história.</li>
   </ul>
 </section>
@@ -173,11 +173,11 @@ PAGES = [
 """,
     },
     {
-        "title": "Psicoterapia para pessoas em alta exigência emocional",
+        "title": "Psicoterapia para pessoas em autocobrança e sobrecarga emocional",
         "slug": "psicoterapia-alta-exigencia-emocional",
         "excerpt": "Para quem sustenta muitas responsabilidades, decisões e relações — e percebe que seguir funcionando já não significa estar bem.",
-        "meta_title": "Psicoterapia para alta exigência emocional | Julia Novaes",
-        "meta_description": "Psicoterapia para pessoas em alta exigência emocional, com foco em ansiedade, autocobrança, relações e transições importantes.",
+        "meta_title": "Psicoterapia para autocobrança e sobrecarga emocional | Julia Novaes",
+        "meta_description": "Psicoterapia para pessoas em autocobrança, sobrecarga emocional, dificuldade de reconhecer limites, relações e transições importantes.",
         "image": "/content/images/2026/05/post-psicoterapia.png",
         "html": """
 <section class="page-panel page-panel-intro">
@@ -314,7 +314,7 @@ PAGES = [
         "image": "/content/images/2026/05/post-psicoterapia.png",
         "html": """
 <section class="page-panel page-panel-intro">
-  <p>Um canal institucional para psiquiatras, médicos particulares, advogados de família, consultores de carreira e clínicas boutique que desejam conhecer o trabalho clínico de Julia Novaes e realizar encaminhamentos responsáveis.</p>
+  <p>Um canal institucional para psiquiatras, médicos particulares, advogados de família, consultores de carreira, profissionais e instituições que atuam com cuidado individualizado em saúde, família, carreira e bem-estar e desejam conhecer o trabalho clínico de Julia Novaes e realizar encaminhamentos responsáveis.</p>
 </section>
 <section class="page-split">
   <div>
@@ -333,7 +333,7 @@ PAGES = [
     <li>Conflitos afetivos e conjugais.</li>
     <li>Separações e reorganizações de vida.</li>
     <li>Transições pessoais, familiares ou profissionais.</li>
-    <li>Autocobrança e alta exigência emocional.</li>
+    <li>Autocobrança, sobrecarga emocional e dificuldade de reconhecer limites.</li>
     <li>Questões relacionadas a vínculos, escolhas e projetos de vida.</li>
   </ul>
 </section>

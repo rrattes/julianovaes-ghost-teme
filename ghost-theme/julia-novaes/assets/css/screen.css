@@ -758,7 +758,7 @@ h3 {
   list-style: none;
 }
 
-.first-contact-list li {
+.first-contact-list article {
   display: grid;
   grid-template-columns: 42px minmax(0, 1fr);
   gap: 16px;
@@ -1028,7 +1028,7 @@ h3 {
   .contact-card,
   .contact-details article,
   .page-list li,
-  .first-contact-list li {
+  .first-contact-list article {
     padding: 26px;
   }
 
