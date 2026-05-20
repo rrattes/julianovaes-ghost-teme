@@ -226,6 +226,78 @@ PAGES = [
 """,
     },
     {
+        "title": "Psicoterapia online com escuta clínica e cuidado reservado",
+        "slug": "psicoterapia-online",
+        "excerpt": "Atendimento psicológico online para adultos, com privacidade, continuidade e horário reservado.",
+        "meta_title": "Psicoterapia online | Julia Novaes",
+        "meta_description": "Atendimento psicológico online para adultos, com privacidade, continuidade e horário reservado.",
+        "image": "/content/images/2026/05/post-psicoterapia.png",
+        "html": """
+<section class="page-panel page-panel-intro">
+  <p>Um formato de atendimento para adultos que buscam continuidade de cuidado, privacidade e um espaço clínico possível dentro da rotina.</p>
+</section>
+<section class="page-split">
+  <div>
+    <p class="kicker">Para quem é?</p>
+    <h2>Para quem é a psicoterapia online?</h2>
+  </div>
+  <div>
+    <p>A psicoterapia online pode ser uma possibilidade para pessoas que desejam iniciar ou manter um processo terapêutico mesmo com uma rotina mais complexa, deslocamentos frequentes ou dificuldade de acesso presencial.</p>
+    <p>O atendimento preserva a escuta clínica, o sigilo e a regularidade do processo.</p>
+  </div>
+</section>
+<section class="page-split">
+  <div>
+    <p class="kicker">Continuidade</p>
+    <h2>Privacidade e continuidade</h2>
+  </div>
+  <div>
+    <p>Para que o atendimento online aconteça com qualidade, é importante que a pessoa esteja em um ambiente reservado, com privacidade e condições adequadas de fala e escuta.</p>
+    <p>A continuidade dos encontros permite que o processo psicoterapêutico se desenvolva com cuidado e profundidade.</p>
+  </div>
+</section>
+<section class="page-list">
+  <h2>O que pode ser trabalhado</h2>
+  <ul>
+    <li>Ansiedade e sofrimento emocional.</li>
+    <li>Autocobrança e sobrecarga.</li>
+    <li>Relações afetivas e familiares.</li>
+    <li>Escolhas e transições de vida.</li>
+    <li>Separações e reorganizações.</li>
+    <li>Dificuldade de reconhecer limites.</li>
+    <li>Questões existenciais e modos de viver.</li>
+  </ul>
+</section>
+<section class="page-split">
+  <div>
+    <p class="kicker">Cuidados</p>
+    <h2>Cuidados para o atendimento online</h2>
+  </div>
+  <div>
+    <p>O atendimento deve acontecer em um espaço privado, com conexão estável e tempo reservado para a sessão.</p>
+    <p>Esses cuidados ajudam a preservar o sigilo, a presença e a qualidade do encontro clínico.</p>
+  </div>
+</section>
+<section class="page-split">
+  <div>
+    <p class="kicker">Primeiro contato</p>
+    <h2>Como funciona o primeiro contato</h2>
+  </div>
+  <div>
+    <p>O primeiro contato pode ser feito pelo WhatsApp profissional. A partir dele, são enviadas informações sobre disponibilidade de agenda, valores, formato dos atendimentos e funcionamento do processo.</p>
+    <p>Os atendimentos são particulares e realizados em horário previamente reservado.</p>
+  </div>
+</section>
+<section class="page-cta">
+  <div>
+    <p class="kicker">Disponibilidade</p>
+    <h2>Um primeiro contato reservado para conversar sobre possibilidades de atendimento</h2>
+  </div>
+  <a class="button" href="https://wa.me/5521999988956?text=Ol%C3%A1%2C%20Julia.%20Gostaria%20de%20solicitar%20disponibilidade%20para%20psicoterapia%20online.">Solicitar disponibilidade de agenda</a>
+</section>
+""",
+    },
+    {
         "title": "Psicoterapia para pessoas em autocobrança e sobrecarga emocional",
         "slug": "psicoterapia-alta-exigencia-emocional",
         "excerpt": "Para quem sustenta muitas responsabilidades, decisões e relações — e percebe que seguir funcionando já não significa estar bem.",
