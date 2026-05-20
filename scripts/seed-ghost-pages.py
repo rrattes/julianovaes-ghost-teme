@@ -139,6 +139,67 @@ PAGES = [
 """,
     },
     {
+        "title": "Psicoterapia para pessoas em alta exigência emocional",
+        "slug": "psicoterapia-alta-exigencia-emocional",
+        "excerpt": "Para quem sustenta muitas responsabilidades, decisões e relações — e percebe que seguir funcionando já não significa estar bem.",
+        "image": "/content/images/2026/05/post-psicoterapia.png",
+        "html": """
+<section class="page-panel page-panel-intro">
+  <p>Para adultos, profissionais liberais, executivos, mulheres sobrecarregadas e pessoas em transições importantes que percebem que seguir funcionando já não significa estar bem.</p>
+  <p>Um espaço clínico reservado para compreender o peso das responsabilidades, das escolhas, das relações e das exigências que atravessam a vida.</p>
+</section>
+<section class="page-split">
+  <div>
+    <p class="kicker">Quando procurar?</p>
+    <h2>Quando funcionar no limite deixa de ser suficiente</h2>
+  </div>
+  <div>
+    <p>Nem sempre o sofrimento aparece como uma crise evidente. Muitas vezes, ele se apresenta como cansaço constante, irritabilidade, dificuldade de descansar, necessidade de controle ou sensação de estar sempre em alerta. Por fora, a vida pode parecer organizada. Por dentro, algo começa a cobrar espaço.</p>
+    <p>A psicoterapia pode ser buscada quando a pessoa percebe que tem funcionado no limite, mesmo mantendo suas responsabilidades. Não é preciso esperar que tudo desmorone para começar um processo de cuidado.</p>
+  </div>
+</section>
+<section class="page-list">
+  <h2>Temas frequentes</h2>
+  <ul>
+    <li>Ansiedade e excesso de antecipação.</li>
+    <li>Autocobrança e dificuldade de reconhecer limites.</li>
+    <li>Conflitos afetivos e conjugais.</li>
+    <li>Decisões importantes de vida.</li>
+    <li>Sensação de solidão mesmo em meio a muitas relações.</li>
+    <li>Transições profissionais, familiares ou pessoais.</li>
+    <li>Cansaço emocional de quem precisa dar conta de tudo.</li>
+  </ul>
+</section>
+<section class="page-split">
+  <div>
+    <p class="kicker">Processo clínico</p>
+    <h2>Como a psicoterapia pode ajudar</h2>
+  </div>
+  <div>
+    <p>A psicoterapia oferece um espaço reservado para elaborar aquilo que, muitas vezes, não encontra lugar na rotina. O processo não busca respostas prontas nem soluções rápidas.</p>
+    <p>A proposta é construir uma escuta cuidadosa sobre a forma como a pessoa se relaciona consigo, com os outros, com suas escolhas e com as exigências que atravessam sua vida.</p>
+  </div>
+</section>
+<section class="page-split">
+  <div>
+    <p class="kicker">Primeiro contato</p>
+    <h2>Como funciona o primeiro contato</h2>
+  </div>
+  <div>
+    <p>O primeiro contato pode ser feito pelo WhatsApp profissional. A partir dele, são enviadas informações sobre disponibilidade de agenda, formato dos atendimentos, valores e funcionamento do processo.</p>
+    <p>Os atendimentos são particulares e realizados em horário previamente reservado.</p>
+  </div>
+</section>
+<section class="page-cta">
+  <div>
+    <p class="kicker">Disponibilidade</p>
+    <h2>Um primeiro contato discreto para entender possibilidades de atendimento</h2>
+  </div>
+  <a class="button" href="https://wa.me/5521999988956?text=Ol%C3%A1%2C%20Julia.%20Gostaria%20de%20solicitar%20disponibilidade%20de%20agenda%20para%20psicoterapia.">Solicitar disponibilidade de agenda</a>
+</section>
+""",
+    },
+    {
         "title": "Psicoterapia de casal",
         "slug": "psicoterapia-de-casal",
         "excerpt": "Um espaço de cuidado para o casal refletir sobre comunicação, vínculos, conflitos e possibilidades.",
