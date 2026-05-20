@@ -83,15 +83,15 @@
   </div>
 </section>
 
-<section class="section">
-  <div class="container article-section">
-    <div class="article-intro">
+<section class="section clinical-readings">
+  <div class="container">
+    <div class="section-title">
       <p class="kicker">Artigos</p>
-      <h2>Reflexões para a vida e as relações</h2>
-      <a class="text-link" href="/tag/artigos/">Ver todos os artigos <span aria-hidden="true">→</span></a>
+      <h2>Reflexões clínicas</h2>
+      <p>Textos sobre vida emocional, vínculos, escolhas e processos de elaboração.</p>
     </div>
     <div class="article-grid">
-      {{#get "posts" limit="3" filter="slug:-coming-soon" include="tags,authors" as |articles|}}
+      {{#get "posts" limit="4" filter="slug:[cansaco-de-quem-parece-sempre-dar-conta,relacao-funciona-por-fora-mas-esvazia-por-dentro,psicoterapia-nao-e-apenas-para-momentos-de-crise,o-que-se-repete-nas-relacoes-tambem-merece-escuta]" include="tags,authors" as |articles|}}
         {{#if articles}}
           {{#foreach articles}}
             <article class="article-card">
@@ -126,6 +126,9 @@
           </article>
         {{/if}}
       {{/get}}
+    </div>
+    <div class="section-footer-link">
+      <a class="text-link" href="/tag/artigos/">Ver todos os artigos <span aria-hidden="true">→</span></a>
     </div>
   </div>
 </section>

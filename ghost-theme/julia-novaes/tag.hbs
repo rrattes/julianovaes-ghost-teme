@@ -1,11 +1,15 @@
 {{!< default}}
 
-<section class="content-page">
+<section class="content-page tag-articles">
   <div class="container">
     <header class="content-header">
       <p class="kicker">Artigos</p>
       <h1>{{tag.name}}</h1>
-      {{#if tag.description}}<p>{{tag.description}}</p>{{/if}}
+      {{#if tag.description}}
+        <p>{{tag.description}}</p>
+      {{else}}
+        <p>Textos sobre vida emocional, vínculos, escolhas e processos de elaboração.</p>
+      {{/if}}
     </header>
     <div class="article-grid">
       {{#foreach posts}}

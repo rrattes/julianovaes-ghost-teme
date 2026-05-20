@@ -289,6 +289,13 @@ h3 {
   text-align: center;
 }
 
+.section-title p:last-child {
+  max-width: 560px;
+  margin: 16px auto 0;
+  color: var(--muted);
+  line-height: 1.7;
+}
+
 .kicker {
   margin: 0 0 12px;
   color: var(--terracotta);
@@ -313,6 +320,17 @@ h3 {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 28px;
+}
+
+.clinical-readings {
+  border-top: 1px solid rgba(222, 210, 195, 0.7);
+  background:
+    linear-gradient(180deg, rgba(255, 253, 248, 0.64), rgba(247, 242, 234, 0.9)),
+    var(--background);
+}
+
+.clinical-readings .article-grid {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
 }
 
 .service-card {
@@ -475,6 +493,12 @@ h3 {
   gap: clamp(54px, 6vw, 76px);
 }
 
+.article-card {
+  border: 1px solid rgba(222, 210, 195, 0.86);
+  background: rgba(255, 253, 248, 0.74);
+  padding: 18px;
+}
+
 .article-card img,
 .placeholder-image {
   width: 100%;
@@ -492,6 +516,12 @@ h3 {
 
 .read-link {
   margin-top: 18px;
+}
+
+.section-footer-link {
+  display: flex;
+  justify-content: center;
+  margin-top: 38px;
 }
 
 .content-page {
@@ -627,6 +657,7 @@ h3 {
 .page-split,
 .page-list,
 .faq-list,
+.related-readings,
 .service-list,
 .contact-grid,
 .page-cta,
@@ -724,6 +755,48 @@ h3 {
   line-height: 1.75;
 }
 
+.related-readings {
+  border-top: 1px solid rgba(222, 210, 195, 0.9);
+  padding-top: 46px;
+}
+
+.related-readings-header {
+  max-width: 620px;
+  margin-bottom: 26px;
+}
+
+.related-readings-header h2 {
+  margin: 0;
+  color: var(--text);
+  font-size: clamp(30px, 3vw, 42px);
+  line-height: 1.1;
+}
+
+.related-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.related-grid article {
+  border: 1px solid rgba(222, 210, 195, 0.9);
+  background: rgba(255, 253, 248, 0.72);
+  padding: 24px;
+}
+
+.related-grid h3 {
+  margin: 0 0 12px;
+  font-size: 24px;
+  line-height: 1.1;
+}
+
+.related-grid p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 16px;
+  line-height: 1.68;
+}
+
 .service-list {
   display: grid;
   gap: 22px;
@@ -790,6 +863,33 @@ h3 {
 }
 
 .content-body .button {
+  text-decoration: none;
+}
+
+.post-contact-cta {
+  margin-top: 60px;
+  border-top: 1px solid rgba(222, 210, 195, 0.9);
+  border-bottom: 1px solid rgba(222, 210, 195, 0.9);
+  background: rgba(255, 253, 248, 0.64);
+  padding: 38px;
+}
+
+.post-contact-cta h2 {
+  margin: 0 0 14px;
+  color: var(--text);
+  font-size: clamp(30px, 3vw, 42px);
+  line-height: 1.08;
+}
+
+.post-contact-cta p:not(.kicker) {
+  margin: 0;
+  color: var(--muted);
+  font-size: 17px;
+  line-height: 1.72;
+}
+
+.post-contact-cta .button {
+  margin-top: 24px;
   text-decoration: none;
 }
 
@@ -1032,7 +1132,9 @@ h3 {
 
   .service-grid,
   .article-grid,
+  .clinical-readings .article-grid,
   .page-list ul,
+  .related-grid,
   .service-list article,
   .first-contact-list {
     grid-template-columns: 1fr;
@@ -1115,8 +1217,13 @@ h3 {
   .contact-card,
   .contact-details article,
   .page-list li,
+  .related-grid article,
   .first-contact-list article {
     padding: 26px;
+  }
+
+  .post-contact-cta {
+    padding: 30px 24px;
   }
 
   .service-card {
